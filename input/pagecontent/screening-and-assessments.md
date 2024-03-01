@@ -137,27 +137,65 @@ Each profile's *Quick Start* section shows searches by category. Although not de
 
  <span class= "bg-warning" markdown= "1">Clients need to understand that data categorization is somewhat subjective. The categorization applied by the source may not align with the client's expectations. Clients may find it more beneficial to use queries based on a specific code or set of codes or to perform additional client-side filtering of query results.</span><!-- bg-warning -->
 
-<div class="bg-success" markdown="1">
-
 #### Screening and Assessment Codes
 
 The US Core Observation Screening Assessment Profile, SDC Base Questionnaire, and US Core Simple Observation Profiles have [preferred] or [example] bindings to broadly defined LOINC value sets. These value sets contain concepts that span many use cases and are not bound to any USCDI Health Assessments Data Element.  
 
-##### USCDI Health Assessments Data Element ValueSets
+##### USCDI Health Assessments Data Element Value Sets
 
-The table below lists the USCDI Health Assessments Data Elements and the associated value sets for each USCDI Data Element.  This table and guidance intend to promote interoperability by introducing domain-specific value sets as "starter sets" that implementers **SHOULD** use. Implementers **SHALL?/SHOULD?** treat them as having an [extensible] binding to the corresponding US Core Profile. For example, the *Functional Status Clinician Interpretation ValueSet* is **extensibly** bound to the US Core Simple Observation Profile for clinical judgment observations when communicating Functional Status Observations.  However, the value sets in this table are not formally bound to a US Core Profile in the StructureDefinitions, and "automatic" validation (confirmation) that a code is a member of a value set will not occur using the standard validation tools.
+The following sections and table below identify the associated value sets for each USCDI Health Assessments Data Element.  This guidance intends to promote interoperability by introducing "starter" value sets *where available* for the USCDI Data Elements covered by Screenings and Assessments. These value sets are divided into clinical judgement codes and structured screening and assessment's panel and panel item codes.  Note that in several instances a suitable value set has not yet been identified. Implementers **SHOULD** treat these value sets as having an [extensible] binding. In other words, the *Clinical Judgement Codes* code sets are extensibly bound to the US Core Condition Problems and Health Concerns Profile the US Core Simple Observation Profile when representing clinical judgments. Similarly, *Panel Codes* and *Panel Item Codes* are extensibly bound to the US Core Observation Screening Assessment Profile and SDC Base Questionnaire/US Core QuestionnaireResponse Profile when representing structured screening and assessments. Because the value sets in this table are not formally bound to a US Core Profile in the StructureDefinitions, "automatic" validation (confirmation) that a code is a member of a value set will not occur using the standard validation tools.
+
+###### SDOH value sets
+
+- The Gravity project created and maintains the [Social Determinants of Health Screening Assessments And Questions](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1247.206/expansion) value set for the SDOH USCDI Health Assessments Data Element. This value set contains both panel and panel item codes.
+
+   In addition to these concepts, implementers should consider using several SDOH value sets maintained and updated in VSAC by [Multiple Chronic Condition (MCC) Care Plan Implementation Guide] and the HL7 Patent Care work group with support from the National Institute of Health.  (🤔 are these panel, panel item, or clinical judgment codes?)
+   
+{% include mcc-valueset-list-generator.html %}
+
+###### Functional Status
+
+- The [Functional Status Related Questionnaire Panel Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1586/expansion) contains LOINC panel codes that represent functional status questionnaire LOINC panel code, such as CMS Assessment.
+
+(🤔 this 👇 is not in our list)
+- The [Functional Status Observation](StructureDefinition-FunctionalStatusObservation.html) may be used to represent an observation about mental status that can come from a broad range of subjective and objective information such as what may be derived from Assessment and Screening tools.
+
+###### Mental and Cognitive Health
+
+- The [Cognitive Health Related Questionnaire Panel Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.979/expansion) contains LOINC panel codes that represent Mental or Cognitive health screening assessments, such as FACIT, PROMIS and MoCA.
+
+- The [Cognitive Function Clinician Interpretation](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion) represent clinical judgement codes such as, "Cognitive Function Interpretation".
+
+(🤔 this 👇 is not in our list)
+- The [Mental Status Observation](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.1/expansion) value set represent clinical judgement codes about mental status that can come from a broad range of subjective and objective information such as Assessment and Screening tools.
+
+###### Disability Status
+
+(🤔 this 👇 is not in CCDA)
+
+- The [Disability Status Assessment](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.49/expansion) contains LOINC panel item codes that represent detailed patient questions about functional status, such as difficulty dressing or bathing.
+
+###### Physical Activity
+
+- The [Physical Activity Observation Questions](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.9/expansion) are taken from the [Physical Activity Implementation Guide], sponsored by the [American Heart Association] and the [Physical Activity Alliance]. In addition to contributing to the terminology for the USCDI Health Assessments Physical Activity Data Element, the guide documents a standardized way of measuring and sharing a patient's physical activity.
+
+   In addition to these concepts, implementers should consider using   [Physical Activity Level](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1068/expansion) referenced in the SDOH section above. It represents simple question and answer assessment questions such as, "Kinds of physical activity you usually performed while on the job this last year" or "Days per week of moderate to vigorous physical activity".
+
+###### Substance Use (Including Alcohol Use)
+
+- The [Substance Use](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion) contain LOINC panel item codes such as, "How often do you have a drink containing alcohol" or "How often have you used any prescription medications just for the feeling, more than prescribed or that were not prescribed for you in past 12 months (TAPS)"
+
+- The [Alcohol Use Related Questionnaire Panel Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1585/expansion) contains the LOINC Panel Codes for Alcohol Use Disorder Identification Test - Consumption AUDIT-C and PROMIS short form - alcohol - alcohol use 7a - version 1.0.
+
+(🤔 these 👇 codes are clinical judgement codes and not panel item codes?)
+
+- The [Drug Misuse](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.707/expansion) contains clinical judgement codes
+to represent conclusions or diagnoses pertaining to drug misuse or abuse.
 
 {% include assessment-valueset-table-generator.html %}
 
 This information is also available as a [csv](assessments-valuesets.csv) or [excel](assessments-valuesets.xlsx) file:
 
-##### Gravity SDOH ValueSets
-
-The Gravity project created several value sets for the USCDI Health Assessments Data Element, SDOH, and they are listed below. Implementers **SHOULD** use to them to extend the panel item codes when gaps in the *US Core SDOH Panel Item Codes* concepts are encountered.
-
-{% include gravity-valueset-list-generator.html %}
-
-</div><!-- new-content -->
 
 #### Codes for Problems/HealthConcerns, Goals, Service Requests, and Procedures
 
