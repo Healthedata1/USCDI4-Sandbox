@@ -375,6 +375,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+<tr>
+<td>!SDOH</td>
+<td>"sdoh"</td>
+</tr>
 
 
 
@@ -391,6 +395,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+<tr>
+<td>SDOH</td>
+<td>"sdoh"</td>
+</tr>
 
 
 
@@ -492,6 +500,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>!Functional Status</td>
+<td>"functional-status"</td>
+</tr>
 
 
 
@@ -591,6 +623,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+<tr>
+<td>!Functional Status</td>
+<td>"functional-status"</td>
+</tr>
 
 
 
@@ -600,9 +636,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-
-
-
+<tr>
+<td>Functional Status</td>
+<td>"functional-status"</td>
+</tr>
 
 
 
@@ -625,11 +662,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+<tr>
+<td>!Mental/Cognitive Status.</td>
+<td>"cognitive-status"</td>
+</tr>
 
 
 
 
 
+
+
+
+
+<tr>
+<td>Mental/Cognitive Status.</td>
+<td>"cognitive-status"</td>
+</tr>
 
 
 
@@ -703,293 +752,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><span class="bg-warning">Clients need to understand that data categorization is somewhat subjective. The categorization applied by the source may not align with the client’s expectations. Clients may find it more beneficial to use queries based on a specific code or set of codes or to perform additional client-side filtering of query results.</span>  <!-- bg-warning --></p>
 
-<div class="bg-success">
+<h4 id="screening-and-assessment-codes">Screening and Assessment Codes</h4>
 
-  <h4 id="screening-and-assessment-codes">Screening and Assessment Codes</h4>
+<p>The US Core Observation Screening Assessment Profile, SDC Base Questionnaire, and US Core Simple Observation Profiles have [preferred] or [example] bindings to broadly defined LOINC value sets. These value sets contain concepts that span many use cases and are not bound to any USCDI Health Assessments Data Element.</p>
 
-  <p>The US Core Observation Screening Assessment Profile, SDC Base Questionnaire, and US Core Simple Observation Profiles have [preferred] or [example] bindings to broadly defined LOINC value sets. These value sets contain concepts that span many use cases and are not bound to any USCDI Health Assessments Data Element.</p>
+<h5 id="uscdi-health-assessments-data-element-value-sets">USCDI Health Assessments Data Element Value Sets</h5>
 
-  <h5 id="uscdi-health-assessments-data-element-valuesets">USCDI Health Assessments Data Element ValueSets</h5>
+<p>The following sections and table below identify the associated value sets for each USCDI Health Assessments Data Element.  This guidance intends to promote interoperability by introducing “starter” value sets <em>where available</em> for the USCDI Data Elements covered by Screenings and Assessments. These value sets are divided into clinical judgement codes and structured screening and assessment’s panel and panel item codes.  Note that in several instances a suitable value set has not yet been identified. Implementers <strong>SHOULD</strong> treat these value sets as having an <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a> binding. In other words, the <em>Clinical Judgement Codes</em> code sets are extensibly bound to the US Core Condition Problems and Health Concerns Profile the US Core Simple Observation Profile when representing clinical judgments. Similarly, <em>Panel Codes</em> and <em>Panel Item Codes</em> are extensibly bound to the US Core Observation Screening Assessment Profile and SDC Base Questionnaire/US Core QuestionnaireResponse Profile when representing structured screening and assessments. Because the value sets in this table are not formally bound to a US Core Profile in the StructureDefinitions, “automatic” validation (confirmation) that a code is a member of a value set will not occur using the standard validation tools.</p>
 
-  <p>The table below lists the USCDI Health Assessments Data Elements and the associated value sets for each USCDI Data Element.  This table and guidance intend to promote interoperability by introducing domain-specific value sets as “starter sets” that implementers <strong>SHOULD</strong> use. Implementers <strong>SHALL?/SHOULD?</strong> treat them as having an <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a> binding to the corresponding US Core Profile. For example, the <em>Functional Status Clinician Interpretation ValueSet</em> is <strong>extensibly</strong> bound to the US Core Simple Observation Profile for clinical judgment observations when communicating Functional Status Observations.  However, the value sets in this table are not formally bound to a US Core Profile in the StructureDefinitions, and “automatic” validation (confirmation) that a code is a member of a value set will not occur using the standard validation tools.</p>
+<h6 id="sdoh-value-sets">SDOH value sets</h6>
 
-    <!-- Source =  This file is generated by liquid syntax below. The source table is input/data/assessments-valuesets.csv
+<ul>
+  <li>
+    <p>The Gravity project created and maintains the <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1247.206/expansion">Social Determinants of Health Screening Assessments And Questions</a> value set for the SDOH USCDI Health Assessments Data Element. This value set contains both panel and panel item codes.</p>
+
+    <p>In addition to these concepts, implementers should consider using several SDOH value sets maintained and updated in VSAC by [Multiple Chronic Condition (MCC) Care Plan Implementation Guide] and the HL7 Patent Care work group with support from the National Institute of Health.  (&#x1F914; are these panel, panel item, or clinical judgment codes?)</p>
+  </li>
+</ul>
+
+  <!-- Source =  This file is generated by liquid syntax below. The source table is input/data/assessments-valuesets.csv
  where edits to the table contents are made -->
 
-  <table class="grid">
-<thead>
-<tr>
-<th>USCDI Data Element</th>
-<th>ValueSet (VSAC link)</th>
-<th>Clinical Judgement Codes</th>
-<th>Panel Codes</th>
-<th>Panel Item Codes</th>
-</tr>
-</thead>
-<tbody>
+<ul>
 
 
-<tr>
-<td>SDOH</td>
-<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1247.126/expansion">Social Determinants of Health Screening Assessments</a></td>
-<td></td>
-<td style="text-align:center; color:green">✔</td>
-<td></td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
 
 
 
-
-
-
-
-<tr>
-<td>SDOH</td>
-<td><a href="ValueSet-uscore-common-sdoh-assessments.html">US Core SDOH Panel Item Codes</a></td>
-<td></td>
-<td></td>
-<td style="text-align:center; color:green">✔</td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<tr>
-<td>Functional Status</td>
-<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1008/expansion">Functional Status Clinical Assessment</a></td>
-<td></td>
-<td></td>
-<td style="text-align:center; color:green">✔</td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<tr>
-<td>Functional Status</td>
-<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1007/expansion">Functional Status Clinician Interpretation</a></td>
-<td style="text-align:center; color:green">✔</td>
-<td></td>
-<td></td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
-
-
-
-
-
-
-
-<tr>
-<td>Functional Status</td>
-<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1586/expansion">Functional Status Related Questionnaire Panel Codes</a></td>
-<td></td>
-<td style="text-align:center; color:green">✔</td>
-<td></td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
-
-
-
-
-
-
-
-<tr>
-<td>Mental/Cognitive Status.</td>
-<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1584/expansion">Cognitive Health Related Questionnaire Panel Codes</a></td>
-<td></td>
-<td style="text-align:center; color:green">✔</td>
-<td></td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
-
-
-
-
-
-
-
-<tr>
-<td>Mental/Cognitive Status.</td>
-<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.981/expansion">Cognitive Function Clinical Assessment</a></td>
-<td></td>
-<td></td>
-<td style="text-align:center; color:green">✔</td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
-
-
-
-
-
-
-
-<tr>
-<td>Mental/Cognitive Status.</td>
-<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.979/expansion">Cognitive Function Clinician Interpretation</a></td>
-<td style="text-align:center; color:green">✔</td>
-<td></td>
-<td></td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
-
-
-
-
-
-
-
-<tr>
-<td>Disability Status</td>
-<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.49/expansion">Disability Status Assessment</a></td>
-<td></td>
-<td></td>
-<td style="text-align:center; color:green">✔</td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
-
-
-
-
-
-
-
-<tr>
-<td>Physical Activity</td>
-<td><a href="ValueSet-uscore-pa-codes.html">US Core PA Codes</a></td>
-<td></td>
-<td></td>
-<td style="text-align:center; color:green">✔</td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
-
-
-
-
-
-
-
-<tr>
-<td>Alcohol Use</td>
-<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion">Substance Use</a></td>
-<td></td>
-<td></td>
-<td style="text-align:center; color:green">✔</td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
-
-
-
-
-
-
-
-<tr>
-<td>Alcohol Use</td>
-<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1585/expansion">Alcohol Use Related Questionnaire Panel Codes</a></td>
-<td></td>
-<td style="text-align:center; color:green">✔</td>
-<td></td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
-
-
-
-
-
-
-
-<tr>
-<td>Substance Use</td>
-<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion">Substance Use</a></td>
-<td></td>
-<td></td>
-<td style="text-align:center; color:green">✔</td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
-
-
-</tbody>
-</table>
-
-  <p><a name="l1095">​</a>This information is also available as a <a href="assessments-valuesets.csv">csv</a> or <a href="assessments-valuesets.xlsx">excel</a> file:</p>
-
-  <h5 id="gravity-sdoh-valuesets">Gravity SDOH ValueSets</h5>
-
-  <p>The Gravity project created several value sets for the USCDI Health Assessments Data Element, SDOH, and they are listed below. Implementers <strong>SHOULD</strong> use to them to extend the panel item codes when gaps in the <em>US Core SDOH Panel Item Codes</em> concepts are encountered.</p>
-
-    <!-- Source =  This file is generated by liquid syntax below. The source table is input/data/assessments-valuesets.csv
- where edits to the table contents are made -->
-
-  <ul>
 
 
 
@@ -1005,9 +794,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+
+
 <li>
 <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1057/expansion">Caregiver Characteristics</a>
 </li>
+
+
 
 
 
@@ -1021,9 +814,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+
+
 <li>
 <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1048/expansion">Current or Former Occupation</a>
 </li>
+
+
 
 
 
@@ -1037,9 +834,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+
+
 <li>
 <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1030/expansion">English Proficiency</a>
 </li>
+
+
 
 
 
@@ -1053,9 +854,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+
+
 <li>
 <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1075/expansion">Exposure to Environmental Hazards</a>
 </li>
+
+
 
 
 
@@ -1069,9 +874,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+
+
 <li>
 <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1053/expansion">Income Level</a>
 </li>
+
+
 
 
 
@@ -1085,9 +894,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+
+
 <li>
 <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1060/expansion">Living Situation</a>
 </li>
+
+
 
 
 
@@ -1101,9 +914,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+
+
 <li>
 <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1042/expansion">Neglect</a>
 </li>
+
+
 
 
 
@@ -1117,9 +934,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+
+
 <li>
 <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1076/expansion">Unsafe Neighborhood</a>
 </li>
+
+
 
 
 
@@ -1177,10 +998,343 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </ul>
 
-</div>
-  <!-- new-content -->
+<h6 id="functional-status">Functional Status</h6>
+
+<ul>
+  <li>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1586/expansion">Functional Status Related Questionnaire Panel Codes</a> contains LOINC panel codes that represent functional status questionnaire LOINC panel code, such as CMS Assessment.</li>
+</ul>
+
+<p>(&#x1F914; this &#x1F447; is not in our list)</p>
+<ul>
+  <li><a name="l1025">​</a>The <a href="StructureDefinition-FunctionalStatusObservation.html">Functional Status Observation</a> may be used to represent an observation about mental status that can come from a broad range of subjective and objective information such as what may be derived from Assessment and Screening tools.</li>
+</ul>
+
+<h6 id="mental-and-cognitive-health">Mental and Cognitive Health</h6>
+
+<ul>
+  <li>
+    <p>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.979/expansion">Cognitive Health Related Questionnaire Panel Codes</a> contains LOINC panel codes that represent Mental or Cognitive health screening assessments, such as FACIT, PROMIS and MoCA.</p>
+  </li>
+  <li>
+    <p>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion">Cognitive Function Clinician Interpretation</a> represent clinical judgement codes such as, “Cognitive Function Interpretation”.</p>
+  </li>
+</ul>
+
+<p>(&#x1F914; this &#x1F447; is not in our list)</p>
+<ul>
+  <li>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.1/expansion">Mental Status Observation</a> value set represent clinical judgement codes about mental status that can come from a broad range of subjective and objective information such as Assessment and Screening tools.</li>
+</ul>
+
+<h6 id="disability-status">Disability Status</h6>
+
+<p>(&#x1F914; this &#x1F447; is not in CCDA)</p>
+
+<ul>
+  <li>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.49/expansion">Disability Status Assessment</a> contains LOINC panel item codes that represent detailed patient questions about functional status, such as difficulty dressing or bathing.</li>
+</ul>
+
+<h6 id="physical-activity">Physical Activity</h6>
+
+<ul>
+  <li>
+    <p>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.9/expansion">Physical Activity Observation Questions</a> are taken from the [Physical Activity Implementation Guide], sponsored by the [American Heart Association] and the [Physical Activity Alliance]. In addition to contributing to the terminology for the USCDI Health Assessments Physical Activity Data Element, the guide documents a standardized way of measuring and sharing a patient’s physical activity.</p>
+
+    <p>In addition to these concepts, implementers should consider using   <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1068/expansion">Physical Activity Level</a> referenced in the SDOH section above. It represents simple question and answer assessment questions such as, “Kinds of physical activity you usually performed while on the job this last year” or “Days per week of moderate to vigorous physical activity”.</p>
+  </li>
+</ul>
+
+<h6 id="substance-use-including-alcohol-use">Substance Use (Including Alcohol Use)</h6>
+
+<ul>
+  <li>
+    <p>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion">Substance Use</a> contain LOINC panel item codes such as, “How often do you have a drink containing alcohol” or “How often have you used any prescription medications just for the feeling, more than prescribed or that were not prescribed for you in past 12 months (TAPS)”</p>
+  </li>
+  <li>
+    <p>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1585/expansion">Alcohol Use Related Questionnaire Panel Codes</a> contains the LOINC Panel Codes for Alcohol Use Disorder Identification Test - Consumption AUDIT-C and PROMIS short form - alcohol - alcohol use 7a - version 1.0.</p>
+  </li>
+</ul>
+
+<p>(&#x1F914; these &#x1F447; codes are clinical judgement codes and not panel item codes?)</p>
+
+<ul>
+  <li>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.707/expansion">Drug Misuse</a> contains clinical judgement codes
+to represent conclusions or diagnoses pertaining to drug misuse or abuse.</li>
+</ul>
+
+  <!-- Source =  This file is generated by liquid syntax below. The source table is input/data/assessments-valuesets.csv
+ where edits to the table contents are made -->
+
+<table class="grid">
+<thead>
+<tr>
+<th>USCDI Data Element</th>
+<th>ValueSet (VSAC link)</th>
+<th>Clinical Judgement Codes</th>
+<th>Panel Codes</th>
+<th>Panel Item Codes</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr>
+<td>SDOH</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1247.206/expansion">Social Determinants of Health Screening Assessments and Questions</a></td>
+<td></td>
+<td style="text-align:center; color:green">✔</td>
+<td style="text-align:center; color:green">✔</td>
+  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td>!Functional Status</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1007/expansion">Functional Status Clinician Interpretation</a></td>
+<td style="text-align:center; color:green">✔</td>
+<td></td>
+<td></td>
+  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td>Functional Status</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1586/expansion">Functional Status Related Questionnaire Panel Codes</a></td>
+<td></td>
+<td style="text-align:center; color:green">✔</td>
+<td></td>
+  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td>Mental/Cognitive Status.</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1584/expansion">Cognitive Health Related Questionnaire Panel Codes</a></td>
+<td></td>
+<td style="text-align:center; color:green">✔</td>
+<td></td>
+  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+<td>Mental/Cognitive Status.</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.979/expansion">Cognitive Function Clinician Interpretation</a></td>
+<td style="text-align:center; color:green">✔</td>
+<td></td>
+<td></td>
+  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td>Disability Status</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.49/expansion">Disability Status Assessment</a></td>
+<td></td>
+<td></td>
+<td style="text-align:center; color:green">✔</td>
+  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td>Physical Activity</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.9/expansion">Physical Activity Observation Questions</a></td>
+<td></td>
+<td></td>
+<td style="text-align:center; color:green">✔</td>
+  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td>Alcohol Use</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion">Substance Use</a></td>
+<td></td>
+<td></td>
+<td style="text-align:center; color:green">✔</td>
+  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td>Alcohol Use</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1585/expansion">Alcohol Use Related Questionnaire Panel Codes</a></td>
+<td></td>
+<td style="text-align:center; color:green">✔</td>
+<td></td>
+  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td>Substance Use</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.707/expansion">Drug Misuse</a></td>
+<td></td>
+<td></td>
+<td style="text-align:center; color:green">✔</td>
+  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
+</tr>
+
+
+</tbody>
+</table>
+
+<p><a name="l1360">​</a>This information is also available as a <a href="assessments-valuesets.csv">csv</a> or <a href="assessments-valuesets.xlsx">excel</a> file:</p>
 
 <h4 id="codes-for-problemshealthconcerns-goals-service-requests-and-procedures">Codes for Problems/HealthConcerns, Goals, Service Requests, and Procedures</h4>
 
@@ -1332,7 +1486,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 27, 2024 20:05+0000">2024-02-27</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 1, 2024 16:44+0000">2024-03-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
