@@ -149,7 +149,7 @@ The following sections and table below identify the associated value sets for ea
 
 - The Gravity project created and maintains the [Social Determinants of Health Screening Assessments And Questions](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1247.206/expansion) value set for the SDOH USCDI Health Assessments Data Element. This value set contains both panel and panel item codes.
 
-   In addition to these concepts, implementers should consider using several SDOH value sets maintained and updated in VSAC by [Multiple Chronic Condition (MCC) Care Plan Implementation Guide] and the HL7 Patent Care work group with support from the National Institute of Health.  (🤔 are these panel, panel item, or clinical judgment codes?)
+   In addition to these concepts, implementers should consider using several SDOH value sets maintained and updated in VSAC by [Multiple Chronic Condition (MCC) Care Plan Implementation Guide] and the HL7 Patent Care work group with support from the National Institute of Health.  These are panel item codes that may part of a LOINC panel.
    
 {% include mcc-valueset-list-generator.html %}
 
@@ -157,27 +157,21 @@ The following sections and table below identify the associated value sets for ea
 
 - The [Functional Status Related Questionnaire Panel Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1586/expansion) contains LOINC panel codes that represent functional status questionnaire LOINC panel code, such as CMS Assessment.
 
-(🤔 this 👇 is not in our list)
-- The [Functional Status Observation](StructureDefinition-FunctionalStatusObservation.html) may be used to represent an observation about mental status that can come from a broad range of subjective and objective information such as what may be derived from Assessment and Screening tools.
-
 ###### Mental and Cognitive Health
 
 - The [Cognitive Health Related Questionnaire Panel Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.979/expansion) contains LOINC panel codes that represent Mental or Cognitive health screening assessments, such as FACIT, PROMIS and MoCA.
 
-- The [Cognitive Function Clinician Interpretation](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion) represent clinical judgement codes such as, "Cognitive Function Interpretation".
+- The [Cognitive Function Clinician Interpretation](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.979/expansion) represent clinical judgement codes such as, "Cognitive Function Interpretation".
 
-(🤔 this 👇 is not in our list)
-- The [Mental Status Observation](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.1/expansion) value set represent clinical judgement codes about mental status that can come from a broad range of subjective and objective information such as Assessment and Screening tools.
+- The [Mental Status Observation](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.1/expansion) value set contains SNOMED CT clinical judgement codes related to mental status observations that can come from a broad range of subjective and objective information such as Assessment and Screening tools. In many cases the value (answer) at Observation.value may be boolean true \| false.
 
 ###### Disability Status
-
-(🤔 this 👇 is not in CCDA)
 
 - The [Disability Status Assessment](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.49/expansion) contains LOINC panel item codes that represent detailed patient questions about functional status, such as difficulty dressing or bathing.
 
 ###### Physical Activity
 
-- The [Physical Activity Observation Questions](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.9/expansion) are taken from the [Physical Activity Implementation Guide], sponsored by the [American Heart Association] and the [Physical Activity Alliance]. In addition to contributing to the terminology for the USCDI Health Assessments Physical Activity Data Element, the guide documents a standardized way of measuring and sharing a patient's physical activity.
+- The [Physical Activity Observation Questions](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.9/expansion) are panel item codes taken from the [Physical Activity Implementation Guide], sponsored by the [American Heart Association] and the [Physical Activity Alliance]. In addition to contributing to the terminology for the USCDI Health Assessments Physical Activity Data Element, the guide documents a standardized way of measuring and sharing a patient's physical activity.
 
    In addition to these concepts, implementers should consider using   [Physical Activity Level](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1068/expansion) referenced in the SDOH section above. It represents simple question and answer assessment questions such as, "Kinds of physical activity you usually performed while on the job this last year" or "Days per week of moderate to vigorous physical activity".
 
@@ -187,10 +181,8 @@ The following sections and table below identify the associated value sets for ea
 
 - The [Alcohol Use Related Questionnaire Panel Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1585/expansion) contains the LOINC Panel Codes for Alcohol Use Disorder Identification Test - Consumption AUDIT-C and PROMIS short form - alcohol - alcohol use 7a - version 1.0.
 
-(🤔 these 👇 codes are clinical judgement codes and not panel item codes?)
-
-- The [Drug Misuse](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.707/expansion) contains clinical judgement codes
-to represent conclusions or diagnoses pertaining to drug misuse or abuse.
+- The [Drug Misuse](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.707/expansion) values set contains SNOMED CT clinical judgement codes
+to represent conclusions or diagnoses pertaining to drug misuse or abuse. In many cases the value (answer) at Observation.value may be boolean true \| false.
 
 {% include assessment-valueset-table-generator.html %}
 
