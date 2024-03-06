@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="9d79cbe5-e288-48fe-a7a5-d13286481b8c"/>
+  <id value="ff7aaa53-737c-4d80-90da-c6277ea44c5b"/>
   <meta>
-    <lastUpdated value="2024-03-01T16:44:56.148+00:00"/>
+    <lastUpdated value="2024-03-06T01:57:38.000+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -13,7 +13,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.74</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.77</p>
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has 19 codes in it. In order to keep the publication size manageable, only a selection (16 codes) of the whole set of codes is shown.</p>
             <table class="codes">
               <tr>
@@ -172,8 +172,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:08449ba6-7a51-45f0-88fa-0df51d5baa64"/>
-          <timestamp value="2024-03-01T16:45:26+00:00"/>
+          <identifier value="urn:uuid:f8626a1e-003a-437f-aeab-d0e763ffe153"/>
+          <timestamp value="2024-03-06T01:58:09+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
@@ -194,11 +194,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.74"/>
+            <valueUri value="http://loinc.org|2.77"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.74"/>
+            <valueUri value="http://loinc.org|2.77"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -291,7 +291,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.74</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.77</p>
             <p>This value set contains 11 concepts.</p>
             <table class="codes">
               <tr>
@@ -410,8 +410,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:90ce6614-206e-4d6e-966e-089a3733d70c"/>
-          <timestamp value="2024-03-01T16:45:26+00:00"/>
+          <identifier value="urn:uuid:6f142987-9525-4e00-9319-0b25439cc2bb"/>
+          <timestamp value="2024-03-06T01:58:10+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -432,11 +432,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.74"/>
+            <valueUri value="http://loinc.org|2.77"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.74"/>
+            <valueUri value="http://loinc.org|2.77"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>

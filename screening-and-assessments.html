@@ -362,38 +362,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-<tr>
-<td>SDOH</td>
-<td>"sdoh"</td>
-</tr>
-
-
-
-
-
-
-
-
-
-<tr>
-<td>!SDOH</td>
-<td>"sdoh"</td>
-</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <tr>
 <td>SDOH</td>
@@ -441,98 +409,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<tr>
-<td>!Functional Status</td>
-<td>"functional-status"</td>
-</tr>
-
-
-
-
-
-
-
-
-
 <tr>
 <td>Functional Status</td>
 <td>"functional-status"</td>
@@ -569,116 +445,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <tr>
-<td>!Functional Status</td>
-<td>"functional-status"</td>
-</tr>
-
-
-
-
-
-
-
-
-
-<tr>
-<td>Functional Status</td>
-<td>"functional-status"</td>
-</tr>
-
-
-
-
-
-
-
-
-
-<tr>
-<td>Mental/Cognitive Status.</td>
+<td>Mental/Cognitive Status</td>
 <td>"cognitive-status"</td>
 </tr>
 
-
-
-
-
-
-
-
-
-<tr>
-<td>!Mental/Cognitive Status.</td>
-<td>"cognitive-status"</td>
-</tr>
-
-
-
-
-
-
-
-
-
-<tr>
-<td>Mental/Cognitive Status.</td>
-<td>"cognitive-status"</td>
-</tr>
 
 
 
@@ -696,20 +467,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-
-
-
-
-
 <tr>
 <td>Physical Activity</td>
 <td>"activity"</td>
 </tr>
-
-
-
-
-
 
 
 
@@ -724,20 +485,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-
-
-
-
-
-
-
-
-
-
 <tr>
 <td>Substance Use</td>
 <td>"social-history"</td>
 </tr>
+
 
 
 
@@ -766,7 +518,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p>The Gravity project created and maintains the <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1247.206/expansion">Social Determinants of Health Screening Assessments And Questions</a> value set for the SDOH USCDI Health Assessments Data Element. This value set contains both panel and panel item codes.</p>
 
-    <p>In addition to these concepts, implementers should consider using several SDOH value sets maintained and updated in VSAC by [Multiple Chronic Condition (MCC) Care Plan Implementation Guide] and the HL7 Patent Care work group with support from the National Institute of Health.  (&#x1F914; are these panel, panel item, or clinical judgment codes?)</p>
+    <p>In addition to these concepts, implementers should consider using several SDOH value sets maintained and updated in VSAC by [Multiple Chronic Condition (MCC) Care Plan Implementation Guide] and the HL7 Patent Care work group with support from the National Institute of Health.  These are panel item codes that may part of a LOINC panel.</p>
   </li>
 </ul>
 
@@ -774,6 +526,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
  where edits to the table contents are made -->
 
 <ul>
+
+
+
+
 
 
 
@@ -1039,17 +795,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </ul>
 
 <h6 id="functional-status">Functional Status</h6>
 
 <ul>
   <li>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1586/expansion">Functional Status Related Questionnaire Panel Codes</a> contains LOINC panel codes that represent functional status questionnaire LOINC panel code, such as CMS Assessment.</li>
-</ul>
-
-<p>(&#x1F914; this &#x1F447; is not in our list)</p>
-<ul>
-  <li><a name="l1025">​</a>The <a href="StructureDefinition-FunctionalStatusObservation.html">Functional Status Observation</a> may be used to represent an observation about mental status that can come from a broad range of subjective and objective information such as what may be derived from Assessment and Screening tools.</li>
 </ul>
 
 <h6 id="mental-and-cognitive-health">Mental and Cognitive Health</h6>
@@ -1059,18 +824,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.979/expansion">Cognitive Health Related Questionnaire Panel Codes</a> contains LOINC panel codes that represent Mental or Cognitive health screening assessments, such as FACIT, PROMIS and MoCA.</p>
   </li>
   <li>
-    <p>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion">Cognitive Function Clinician Interpretation</a> represent clinical judgement codes such as, “Cognitive Function Interpretation”.</p>
+    <p>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.979/expansion">Cognitive Function Clinician Interpretation</a> represent clinical judgement codes such as, “Cognitive Function Interpretation”.</p>
+  </li>
+  <li>
+    <p>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.1/expansion">Mental Status Observation</a> value set contains SNOMED CT clinical judgement codes related to mental status observations that can come from a broad range of subjective and objective information such as Assessment and Screening tools. In many cases the value (answer) at Observation.value may be boolean true | false.</p>
   </li>
 </ul>
 
-<p>(&#x1F914; this &#x1F447; is not in our list)</p>
-<ul>
-  <li>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.1/expansion">Mental Status Observation</a> value set represent clinical judgement codes about mental status that can come from a broad range of subjective and objective information such as Assessment and Screening tools.</li>
-</ul>
-
 <h6 id="disability-status">Disability Status</h6>
-
-<p>(&#x1F914; this &#x1F447; is not in CCDA)</p>
 
 <ul>
   <li>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.49/expansion">Disability Status Assessment</a> contains LOINC panel item codes that represent detailed patient questions about functional status, such as difficulty dressing or bathing.</li>
@@ -1080,7 +841,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li>
-    <p>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.9/expansion">Physical Activity Observation Questions</a> are taken from the [Physical Activity Implementation Guide], sponsored by the [American Heart Association] and the [Physical Activity Alliance]. In addition to contributing to the terminology for the USCDI Health Assessments Physical Activity Data Element, the guide documents a standardized way of measuring and sharing a patient’s physical activity.</p>
+    <p>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.9/expansion">Physical Activity Observation Questions</a> are panel item codes taken from the [Physical Activity Implementation Guide], sponsored by the [American Heart Association] and the [Physical Activity Alliance]. In addition to contributing to the terminology for the USCDI Health Assessments Physical Activity Data Element, the guide documents a standardized way of measuring and sharing a patient’s physical activity.</p>
 
     <p>In addition to these concepts, implementers should consider using   <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1068/expansion">Physical Activity Level</a> referenced in the SDOH section above. It represents simple question and answer assessment questions such as, “Kinds of physical activity you usually performed while on the job this last year” or “Days per week of moderate to vigorous physical activity”.</p>
   </li>
@@ -1095,13 +856,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1585/expansion">Alcohol Use Related Questionnaire Panel Codes</a> contains the LOINC Panel Codes for Alcohol Use Disorder Identification Test - Consumption AUDIT-C and PROMIS short form - alcohol - alcohol use 7a - version 1.0.</p>
   </li>
-</ul>
-
-<p>(&#x1F914; these &#x1F447; codes are clinical judgement codes and not panel item codes?)</p>
-
-<ul>
-  <li>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.707/expansion">Drug Misuse</a> contains clinical judgement codes
-to represent conclusions or diagnoses pertaining to drug misuse or abuse.</li>
+  <li>
+    <p>The <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.707/expansion">Drug Misuse</a> values set contains SNOMED CT clinical judgement codes
+to represent conclusions or diagnoses pertaining to drug misuse or abuse. In many cases the value (answer) at Observation.value may be boolean true | false.</p>
+  </li>
 </ul>
 
   <!-- Source =  This file is generated by liquid syntax below. The source table is input/data/assessments-valuesets.csv
@@ -1173,34 +931,8 @@ to represent conclusions or diagnoses pertaining to drug misuse or abuse.</li>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <tr>
-<td>!Functional Status</td>
+<td>Functional Status</td>
 <td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1007/expansion">Functional Status Clinician Interpretation</a></td>
 <td style="text-align:center; color:green">✔</td>
 <td></td>
@@ -1229,8 +961,64 @@ to represent conclusions or diagnoses pertaining to drug misuse or abuse.</li>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <tr>
-<td>Mental/Cognitive Status.</td>
+<td>Mental/Cognitive Status</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.979/expansion">Cognitive Function Clinician Interpretation</a></td>
+<td style="text-align:center; color:green">✔</td>
+<td></td>
+<td></td>
+  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td>Mental/Cognitive Status</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.1/expansion">Mental Status Observation</a></td>
+<td style="text-align:center; color:green">✔</td>
+<td></td>
+<td></td>
+  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td>Mental/Cognitive Status</td>
 <td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1584/expansion">Cognitive Health Related Questionnaire Panel Codes</a></td>
 <td></td>
 <td style="text-align:center; color:green">✔</td>
@@ -1239,21 +1027,6 @@ to represent conclusions or diagnoses pertaining to drug misuse or abuse.</li>
 </tr>
 
 
-
-
-
-
-
-
-
-<tr>
-<td>Mental/Cognitive Status.</td>
-<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.979/expansion">Cognitive Function Clinician Interpretation</a></td>
-<td style="text-align:center; color:green">✔</td>
-<td></td>
-<td></td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
 
 
 
@@ -1293,21 +1066,6 @@ to represent conclusions or diagnoses pertaining to drug misuse or abuse.</li>
 
 <tr>
 <td>Alcohol Use</td>
-<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion">Substance Use</a></td>
-<td></td>
-<td></td>
-<td style="text-align:center; color:green">✔</td>
-  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
-</tr>
-
-
-
-
-
-
-
-<tr>
-<td>Alcohol Use</td>
 <td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1585/expansion">Alcohol Use Related Questionnaire Panel Codes</a></td>
 <td></td>
 <td style="text-align:center; color:green">✔</td>
@@ -1322,8 +1080,38 @@ to represent conclusions or diagnoses pertaining to drug misuse or abuse.</li>
 
 
 <tr>
+<td>Alcohol Use</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion">Substance Use</a></td>
+<td></td>
+<td></td>
+<td style="text-align:center; color:green">✔</td>
+  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
+</tr>
+
+
+
+
+
+
+
+<tr>
 <td>Substance Use</td>
 <td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.707/expansion">Drug Misuse</a></td>
+<td style="text-align:center; color:green">✔</td>
+<td></td>
+<td></td>
+  <!-- <td><a href="{ {site.data.fhir.path} }terminologies.html#{ {item["Binding Strength"]} }">{ {item["Binding Strength"]} }</a></td> -->
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td>Substance Use</td>
+<td><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1015/expansion">Substance Use</a></td>
 <td></td>
 <td></td>
 <td style="text-align:center; color:green">✔</td>
@@ -1334,7 +1122,7 @@ to represent conclusions or diagnoses pertaining to drug misuse or abuse.</li>
 </tbody>
 </table>
 
-<p><a name="l1360">​</a>This information is also available as a <a href="assessments-valuesets.csv">csv</a> or <a href="assessments-valuesets.xlsx">excel</a> file:</p>
+<p><a name="l1314">​</a>This information is also available as a <a href="assessments-valuesets.csv">csv</a> or <a href="assessments-valuesets.xlsx">excel</a> file:</p>
 
 <h4 id="codes-for-problemshealthconcerns-goals-service-requests-and-procedures">Codes for Problems/HealthConcerns, Goals, Service Requests, and Procedures</h4>
 
@@ -1486,7 +1274,7 @@ to represent conclusions or diagnoses pertaining to drug misuse or abuse.</li>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 1, 2024 16:44+0000">2024-03-01</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 6, 2024 01:57+0000">2024-03-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

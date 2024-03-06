@@ -3,8 +3,8 @@ USCDI4_1Sandbox : Validation Results
 
 err = 15, warn = 1, info = 6
 IG Publisher Version: 1.6.0
-Generated Fri Mar 01 16:48:09 UTC 2024. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
- Build Errors : 51 / 0 / 0
+Generated Wed Mar 06 02:00:55 UTC 2024. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+ Build Errors : 50 / 0 / 0
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-average-blood-pressure : 3 / 0 / 7
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-average-blood-pressure : 3 / 0 / 1
@@ -61,9 +61,8 @@ ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/index.html#/html/bod
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 5821, column 6: The link 'CodeSystem-condition-category.html' for "US Core Condition Category Extension Codes" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 5841, column 6: The link 'CodeSystem-us-core-documentreference-category.html' for "US Core DocumentReferences Category Codes" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 5861, column 6: The link 'CodeSystem-us-core-provenance-participant-type.html' for "US Core Provenance Participant Type Extension Codes" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/ul/li/a at Line 1052, column 12: The link 'StructureDefinition-FunctionalStatusObservation.html' for "Functional Status Observation" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/p/a at Line 1337, column 45: The link 'assessments-valuesets.csv' for "csv" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/p/a at Line 1337, column 92: The link 'assessments-valuesets.xlsx' for "excel" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/p/a at Line 1125, column 45: The link 'assessments-valuesets.csv' for "csv" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/p/a at Line 1125, column 92: The link 'assessments-valuesets.xlsx' for "excel" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json ==
 == input/examples/Observation-average-blood-pressure.json ==
 INFORMATION: Observation/average-blood-pressure: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
