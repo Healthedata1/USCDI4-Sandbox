@@ -5,12 +5,12 @@
 
 To promote interoperability, SMART on FHIR defines a set of core capabilities. An individual SMART server will publish a granular list of its capabilities and a given set of these capabilities is combined to support a specific use, a *Capability Set*. See SMART App Launch's [FHIR OAuth authorization Endpoints and Capabilities](https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#smart-on-fhir-oauth-authorization-endpoints-and-capabilities) for more details.
 
-The following SMART on FHIR *Capability Sets* **SHALL** be supported for US Core Servers that support User-Facing Applications:
+At least one of the following SMART on FHIR *Capability Sets* **SHOULD** be supported for US Core Servers that support User-Facing Applications. For certified systems both **SHALL** be supported:
 
 - [Patient Access for Standalone Apps](https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#patient-access-for-standalone-apps)
 - [Clinician Access for EHR Launch](https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#clinician-access-for-standalone)
 
-Servers **MAY** support the other SMART on FHIR *Capability Sets*.
+Servers **MAY** support the other SMART on FHIR *Capability Sets* and capabilities.
 
 🤔 at least one or both? ( see CCG reference below )
 
@@ -23,6 +23,16 @@ Servers **MAY** support the other SMART on FHIR *Capability Sets*.
     >Paragraph (g)(10)(v)(A)(1)
     > - Health IT Modules will only be tested for the "Patient Access for Standalone Apps" and "Clinician Access for EHR Launch" "Capability Sets”described in the standard adopted at § 170.215(a)(3)
     >   - § 170.215(a)(3) HL7 SMART Application Launch Framework Implementation Guide Release 1.0.0, including mandatory support for the “SMART Core Capabilities” (incorporated by reference in § 170.299).
+
+### 🤔 *Capability Sets* for US Core  User-Facing Client Applications (stolen from IPA)
+
+US Core  User-Facing Client Applications will need to support a subset of the SMART on FHIR server capabilities to function:
+
+- **SHALL** support [launch-standalone] or [launch-ehr] or both.
+-  **SHOULD** support [launch-standalone] and MAY support [launch-ehr].
+- Patient-facing apps **SHALL** support [context-standalone-patient] and **SHOULD** support [permission-patient].
+- Apps with the technical capability to keep a secret **SHALL** support [client-confidential-asymmetric] and MAY support [permission-offline].
+- Apps without the technical capability to keep a secret **SHALL** support [client-public] and **SHALL** NOT support [client-confidential-asymmetric].
 
 
 ### US Core Servers SHALL Support Token Introspection
@@ -51,9 +61,9 @@ This example uses a `patient/` prefix, but implementers may support `system/` an
 
 The table below summarizes the US Core scope requirements (**SHALL**) and best practice recommendations (**SHOULD**) for resource-level and granular scopes. This same information can be found in each US Core Profile page's "Quick Start" section.
 
- For "User-Facing Applications", a system's support for patient-level (`patient`) or user-level (`user`) scopes depends on its published list of SMART on FHIR capabilities.  For example, if a server lists `permission-patient` and `permission-user` in its capabilities, it **SHALL** support both patient-level and user-level required scopes, and **SHOULD** support both patient-level and user-level recommended best-practice scopes.
+ For "User-Facing Applications", a system's support for patient-level (`patient`) or user-level (`user`) scopes depends on its published list of SMART on FHIR capabilities (see the [capability sets](#capability-sets-for-us-core-servers-supporting-user-facing-applications) above).  For example, if a server lists `permission-patient` and `permission-user` in its capabilities, it **SHALL** support both patient-level and user-level required scopes, and **SHOULD** support both patient-level and user-level recommended best-practice scopes.
 
- System-level scopes (`system``) describe data that a client system is directly authorized to access and are useful for "Backend-Services". Systems that support system-level (`system`) scopes, **SHALL** support the required US Core scopes and **SHOULD** support the recommened US Core scopes.
+ For "Backend-Services", System-level scopes (`system`) are used to describe data that a client system is directly authorized to access. Systems that support system-level (`system`) scopes, **SHALL** support the required US Core scopes and **SHOULD** support the recommended US Core scopes.
 
 ##### The Following Resource Level Scopes **SHALL** Be Supported
 
