@@ -10,11 +10,11 @@ The following SMART on FHIR *Capability Sets* **SHALL** be supported for US Core
 - [Patient Access for Standalone Apps](https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#patient-access-for-standalone-apps)
 - [Clinician Access for EHR Launch](https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#clinician-access-for-standalone)
 
+Servers **MAY** support the other SMART on FHIR *Capability Sets*.
+
 🤔 at least one or both? ( see CCG reference below )
 
-🤔 SHOULD there be a *Capability Sets* recommendation for "Backend-Services"?
-
-Servers **MAY** support the other SMART on FHIR *Capability Sets*.
+🤔 SHOULD there be a *Capability Sets* recommendation for "Backend-Services" in next Bulk or SMART guide?
 
 🤔 what about listing individual capabilities  - I do not think this section in HTI-1 Section III 7 e means that *all* US Core Servers **SHALL** support *all* the capabilities in section 8.1.2.
 > As part of this proposal, we proposed to adopt several sections specified as “optional” in the SMART v2 Guide as “required” for purposes of the Program for certification criteria that reference § 170.215(c). Specifically, we proposed to adopt all Capabilities as defined in “8.1.2 Capabilities,” which include but are not limited to (1) backward compatibility mapping for SMART v1 scopes as defined in “3.0.2 Scopes for requesting clinical data;” (2) asymmetric client authentication as defined in “5 Client Authentication: Asymmetric (public key);” and granular scopes as defined in (3) “3.0.2.3 Finer-grained resource constraints using search parameters.”
@@ -51,7 +51,9 @@ This example uses a `patient/` prefix, but implementers may support `system/` an
 
 The table below summarizes the US Core scope requirements (**SHALL**) and best practice recommendations (**SHOULD**) for resource-level and granular scopes. This same information can be found in each US Core Profile page's "Quick Start" section.
 
- A system's support for patient-level (`patient`), user-level (`user`) , and system-level (`system`) scopes depends on its published list of SMART on FHIR capabilities.  For example, if a server lists `permission-patient` and `permission-user` in its capabilities, it **SHALL** support both patient-level and user-level required scopes, and **SHOULD** support both patient-level and user-level recommended best-practice scopes
+ For "User-Facing Applications", a system's support for patient-level (`patient`) or user-level (`user`) scopes depends on its published list of SMART on FHIR capabilities.  For example, if a server lists `permission-patient` and `permission-user` in its capabilities, it **SHALL** support both patient-level and user-level required scopes, and **SHOULD** support both patient-level and user-level recommended best-practice scopes.
+
+ System-level scopes ('system') describe data that a client system is directly authorized to access and are useful for "Backend-Services". Systems that support system-level (`system`) scopes, **SHALL** support the required US Core scopes and **SHOULD** support the recommened US Core scopes.
 
 ##### The Following Resource Level Scopes **SHALL** Be Supported
 
