@@ -10,10 +10,19 @@ The following SMART on FHIR *Capability Sets* **SHALL** be supported for US Core
 - [Patient Access for Standalone Apps](https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#patient-access-for-standalone-apps)
 - [Clinician Access for EHR Launch](https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#clinician-access-for-standalone)
 
+🤔 at least one or both? ( see CCG reference below )
+
+🤔 SHOULD there be a *Capability Sets* recommendation for "Backend-Services"?
+
 Servers **MAY** support the other SMART on FHIR *Capability Sets*.
 
-🤔 what about listing individual capabilities  - I do not think this section in HTI-1 Section III 7 e means all servers **SHALL** support all the capabilities in section 8.1.2.
+🤔 what about listing individual capabilities  - I do not think this section in HTI-1 Section III 7 e means that *all* US Core Servers **SHALL** support *all* the capabilities in section 8.1.2.
 > As part of this proposal, we proposed to adopt several sections specified as “optional” in the SMART v2 Guide as “required” for purposes of the Program for certification criteria that reference § 170.215(c). Specifically, we proposed to adopt all Capabilities as defined in “8.1.2 Capabilities,” which include but are not limited to (1) backward compatibility mapping for SMART v1 scopes as defined in “3.0.2 Scopes for requesting clinical data;” (2) asymmetric client authentication as defined in “5 Client Authentication: Asymmetric (public key);” and granular scopes as defined in (3) “3.0.2.3 Finer-grained resource constraints using search parameters.”
+ - review of [ONC Certification Companion Guides (CCGs)]( https://www.healthit.gov/test-method/standardized-api-patient-and-population-services) (Updated on 02-20-2024)
+
+    >Paragraph (g)(10)(v)(A)(1)
+    > - Health IT Modules will only be tested for the "Patient Access for Standalone Apps" and "Clinician Access for EHR Launch" "Capability Sets”described in the standard adopted at § 170.215(a)(3)
+    >   - § 170.215(a)(3) HL7 SMART Application Launch Framework Implementation Guide Release 1.0.0, including mandatory support for the “SMART Core Capabilities” (incorporated by reference in § 170.299).
 
 
 ### US Core Servers SHALL Support Token Introspection
