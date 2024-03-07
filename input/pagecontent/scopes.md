@@ -25,7 +25,7 @@ Servers **MAY** support the other SMART on FHIR *Capability Sets* and capabiliti
    > - Health IT Modules will only be tested for the "Patient Access for Standalone Apps" and "Clinician Access for EHR Launch" "Capability Sets”described in the standard adopted at § 170.215(a)(3)
    >   - § 170.215(a)(3) HL7 SMART Application Launch Framework Implementation Guide Release 1.0.0, including mandatory support for the “SMART Core Capabilities” (incorporated by reference in § 170.299).
 
-### 🤔 *Capability Sets* for US Core  User-Facing Client Applications (stolen from IPA)
+<!--  ### 🤔 *Capability Sets* for US Core  User-Facing Client Applications (stolen from IPA)
 
 US Core  User-Facing Client Applications will need to support a subset of the SMART on FHIR server capabilities to function:
 
@@ -35,6 +35,7 @@ US Core  User-Facing Client Applications will need to support a subset of the SM
 - Apps with the technical capability to keep a secret **SHALL** support [client-confidential-asymmetric] and MAY support [permission-offline].
 - Apps without the technical capability to keep a secret **SHALL** support [client-public] and **SHALL** NOT support [client-confidential-asymmetric].
 
+-->
 
 ### US Core Servers SHALL Support Token Introspection
 
