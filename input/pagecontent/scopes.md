@@ -53,7 +53,7 @@ The table below summarizes the US Core scope requirements (**SHALL**) and best p
 
  For "User-Facing Applications", a system's support for patient-level (`patient`) or user-level (`user`) scopes depends on its published list of SMART on FHIR capabilities.  For example, if a server lists `permission-patient` and `permission-user` in its capabilities, it **SHALL** support both patient-level and user-level required scopes, and **SHOULD** support both patient-level and user-level recommended best-practice scopes.
 
- System-level scopes ('system') describe data that a client system is directly authorized to access and are useful for "Backend-Services". Systems that support system-level (`system`) scopes, **SHALL** support the required US Core scopes and **SHOULD** support the recommened US Core scopes.
+ System-level scopes (`system``) describe data that a client system is directly authorized to access and are useful for "Backend-Services". Systems that support system-level (`system`) scopes, **SHALL** support the required US Core scopes and **SHOULD** support the recommened US Core scopes.
 
 ##### The Following Resource Level Scopes **SHALL** Be Supported
 
