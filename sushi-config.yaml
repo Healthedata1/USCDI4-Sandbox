@@ -156,7 +156,7 @@ pages:
   guidance.md:
     title: Guidance
     scopes.md:
-      title: US Core SMART Scopes
+      title: SMART on FHIR Obligations and Capabilities
 
   screening-and-assessments.md:
     title: Screening and Assessments
@@ -218,7 +218,7 @@ menu:
   IG Home: index.html
   Guidance: #guidance.html
     General Guidance: guidance.html
-    US Core SMART Scopes: scopes.html
+    SMART on FHIR Obligations and Capabilities: scopes.html
   Future: future.html
   Screening and Assessments: screening-and-assessments.html
   #Table of Contents: toc.html
