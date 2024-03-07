@@ -3,7 +3,7 @@ USCDI4_1Sandbox : Validation Results
 
 err = 15, warn = 1, info = 6
 IG Publisher Version: 1.6.0
-Generated Thu Mar 07 17:44:57 UTC 2024. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+Generated Thu Mar 07 18:07:36 UTC 2024. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
  Build Errors : 51 / 0 / 0
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-average-blood-pressure : 3 / 0 / 7
