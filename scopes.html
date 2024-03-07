@@ -177,6 +177,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#capability-sets-for-us-core-servers-supporting-user-facing-applications" id="markdown-toc-capability-sets-for-us-core-servers-supporting-user-facing-applications"><em>Capability Sets</em> for US Core Servers Supporting User-Facing Applications</a></li>
+  <li><a href="#-capability-sets-for-us-core--user-facing-client-applications-stolen-from-ipa" id="markdown-toc--capability-sets-for-us-core--user-facing-client-applications-stolen-from-ipa">&#x1F914; <em>Capability Sets</em> for US Core  User-Facing Client Applications (stolen from IPA)</a></li>
   <li><a href="#us-core-servers-shall-support-token-introspection" id="markdown-toc-us-core-servers-shall-support-token-introspection">US Core Servers SHALL Support Token Introspection</a></li>
   <li><a href="#smart-scopes" id="markdown-toc-smart-scopes">SMART Scopes</a></li>
   <li><a href="#servers-shall-support-the-following-metadata-in-their-well-knownsmart-configuration" id="markdown-toc-servers-shall-support-the-following-metadata-in-their-well-knownsmart-configuration">Servers SHALL support the following metadata in their <code class="language-plaintext highlighter-rouge">/.well-known/smart-configuration</code></a></li>
@@ -190,14 +191,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>To promote interoperability, SMART on FHIR defines a set of core capabilities. An individual SMART server will publish a granular list of its capabilities and a given set of these capabilities is combined to support a specific use, a <em>Capability Set</em>. See SMART App Launch’s <a href="https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#smart-on-fhir-oauth-authorization-endpoints-and-capabilities">FHIR OAuth authorization Endpoints and Capabilities</a> for more details.</p>
 
-<p>The following SMART on FHIR <em>Capability Sets</em> <strong>SHALL</strong> be supported for US Core Servers that support User-Facing Applications:</p>
+<p>At least one of the following SMART on FHIR <em>Capability Sets</em> <strong>SHOULD</strong> be supported for US Core Servers that support User-Facing Applications. For certified systems both <strong>SHALL</strong> be supported:</p>
 
 <ul>
   <li><a href="https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#patient-access-for-standalone-apps">Patient Access for Standalone Apps</a></li>
   <li><a href="https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#clinician-access-for-standalone">Clinician Access for EHR Launch</a></li>
 </ul>
 
-<p>Servers <strong>MAY</strong> support the other SMART on FHIR <em>Capability Sets</em>.</p>
+<p>Servers <strong>MAY</strong> support the other SMART on FHIR <em>Capability Sets</em> and capabilities.</p>
 
 <p>&#x1F914; at least one or both? ( see CCG reference below )</p>
 
@@ -216,9 +217,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 &gt;   - &sect; 170.215(a)(3) HL7 SMART Application Launch Framework Implementation Guide Release 1.0.0, including mandatory support for the “SMART Core Capabilities” (incorporated by reference in &sect; 170.299).
 </code></pre></div></div>
 
+<h3 id="-capability-sets-for-us-core--user-facing-client-applications-stolen-from-ipa">&#x1F914; <em>Capability Sets</em> for US Core  User-Facing Client Applications (stolen from IPA)</h3>
+
+<p>US Core  User-Facing Client Applications will need to support a subset of the SMART on FHIR server capabilities to function:</p>
+
+<ul>
+  <li><strong>SHALL</strong> support [launch-standalone] or [launch-ehr] or both.</li>
+  <li><strong>SHOULD</strong> support [launch-standalone] and MAY support [launch-ehr].</li>
+  <li>Patient-facing apps <strong>SHALL</strong> support [context-standalone-patient] and <strong>SHOULD</strong> support [permission-patient].</li>
+  <li>Apps with the technical capability to keep a secret <strong>SHALL</strong> support [client-confidential-asymmetric] and MAY support [permission-offline].</li>
+  <li>Apps without the technical capability to keep a secret <strong>SHALL</strong> support [client-public] and <strong>SHALL</strong> NOT support [client-confidential-asymmetric].</li>
+</ul>
+
 <h3 id="us-core-servers-shall-support-token-introspection">US Core Servers SHALL Support Token Introspection</h3>
 
-<p><a name="l412">​</a>US Core Server <strong>SHALL</strong> support token introspection defined by the SMART App Launch Guide. For more details and additional consideration see SMART App Launch’s <a href="hhttps://hl7.org/fhir/smart-app-launch/STU2/token-introspection.html#token-introspection">Token Introspection</a>.</p>
+<p><a name="l468">​</a>US Core Server <strong>SHALL</strong> support token introspection defined by the SMART App Launch Guide. For more details and additional consideration see SMART App Launch’s <a href="hhttps://hl7.org/fhir/smart-app-launch/STU2/token-introspection.html#token-introspection">Token Introspection</a>.</p>
 
 <h3 id="smart-scopes">SMART Scopes</h3>
 
@@ -241,9 +254,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The table below summarizes the US Core scope requirements (<strong>SHALL</strong>) and best practice recommendations (<strong>SHOULD</strong>) for resource-level and granular scopes. This same information can be found in each US Core Profile page’s “Quick Start” section.</p>
 
-<p>For “User-Facing Applications”, a system’s support for patient-level (<code class="language-plaintext highlighter-rouge">patient</code>) or user-level (<code class="language-plaintext highlighter-rouge">user</code>) scopes depends on its published list of SMART on FHIR capabilities.  For example, if a server lists <code class="language-plaintext highlighter-rouge">permission-patient</code> and <code class="language-plaintext highlighter-rouge">permission-user</code> in its capabilities, it <strong>SHALL</strong> support both patient-level and user-level required scopes, and <strong>SHOULD</strong> support both patient-level and user-level recommended best-practice scopes.</p>
+<p>For “User-Facing Applications”, a system’s support for patient-level (<code class="language-plaintext highlighter-rouge">patient</code>) or user-level (<code class="language-plaintext highlighter-rouge">user</code>) scopes depends on its published list of SMART on FHIR capabilities (see the <a href="#capability-sets-for-us-core-servers-supporting-user-facing-applications">capability sets</a> above).  For example, if a server lists <code class="language-plaintext highlighter-rouge">permission-patient</code> and <code class="language-plaintext highlighter-rouge">permission-user</code> in its capabilities, it <strong>SHALL</strong> support both patient-level and user-level required scopes, and <strong>SHOULD</strong> support both patient-level and user-level recommended best-practice scopes.</p>
 
-<p>System-level scopes (<code class="language-plaintext highlighter-rouge">system</code><code class="language-plaintext highlighter-rouge">) describe data that a client system is directly authorized to access and are useful for "Backend-Services". Systems that support system-level (</code>system`) scopes, <strong>SHALL</strong> support the required US Core scopes and <strong>SHOULD</strong> support the recommened US Core scopes.</p>
+<p>For “Backend-Services”, System-level scopes (<code class="language-plaintext highlighter-rouge">system</code>) are used to describe data that a client system is directly authorized to access. Systems that support system-level (<code class="language-plaintext highlighter-rouge">system</code>) scopes, <strong>SHALL</strong> support the required US Core scopes and <strong>SHOULD</strong> support the recommended US Core scopes.</p>
 
 <h5 id="the-following-resource-level-scopes-shall-be-supported">The Following Resource Level Scopes <strong>SHALL</strong> Be Supported</h5>
 
@@ -621,7 +634,7 @@ include parameters: conformance='SHALL'|'SHOULD' see below for how used, and cru
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 7, 2024 18:05+0000">2024-03-07</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 7, 2024 22:02+0000">2024-03-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
