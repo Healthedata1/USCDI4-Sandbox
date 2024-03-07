@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "USCDI4_1Sandbox"] ; # 
   fhir:title [ fhir:v "HealtheData1 USCDI4 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-03-06T01:57:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-07T09:57:17+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -781,7 +781,7 @@
              fhir:value [ fhir:v "scopes.html"^^xsd:anyURI ]
            ] ) ;
            fhir:name [ fhir:v "scopes.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "US Core SMART Scopes" ] ;
+           fhir:title [ fhir:v "SMART on FHIR Obligations and Capabilities" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [

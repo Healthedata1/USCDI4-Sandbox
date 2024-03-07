@@ -18,7 +18,7 @@
   "name" : "USCDI4_1Sandbox",
   "title" : "HealtheData1 USCDI4 Sandbox",
   "status" : "active",
-  "date" : "2024-03-06T01:57:38+00:00",
+  "date" : "2024-03-07T09:57:17+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -900,7 +900,7 @@
             "valueUrl" : "scopes.html"
           }],
           "nameUrl" : "scopes.html",
-          "title" : "US Core SMART Scopes",
+          "title" : "SMART on FHIR Obligations and Capabilities",
           "generation" : "markdown"
         }]
       },
