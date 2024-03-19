@@ -12,6 +12,10 @@ At least one of the following SMART on FHIR *Capability Sets* **SHOULD** be supp
 
 Servers **MAY** support the other SMART on FHIR *Capability Sets* and capabilities.
 
+<div class="bg-info" markdown="1">
+
+#### Questions
+
 🤔 at least one or both? ( see CCG reference below )
 
 🤔 SHOULD there be a *Capability Sets* recommendation for "Backend-Services" in next Bulk or SMART guide?
@@ -24,6 +28,8 @@ Servers **MAY** support the other SMART on FHIR *Capability Sets* and capabiliti
    >Paragraph (g)(10)(v)(A)(1)
    > - Health IT Modules will only be tested for the "Patient Access for Standalone Apps" and "Clinician Access for EHR Launch" "Capability Sets”described in the standard adopted at § 170.215(a)(3)
    >   - § 170.215(a)(3) HL7 SMART Application Launch Framework Implementation Guide Release 1.0.0, including mandatory support for the “SMART Core Capabilities” (incorporated by reference in § 170.299).
+
+</div><!-- info -->
 
 <!--  ### 🤔 *Capability Sets* for US Core  User-Facing Client Applications (stolen from IPA)
 
