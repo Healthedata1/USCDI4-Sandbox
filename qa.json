@@ -6,13 +6,14 @@
   "status" : "active",
   "package-id" : "uscdi4-sandbox",
   "ig-ver" : "0.0.0",
-  "date" : "Thu, 07 Mar, 2024 22:59:42 +0000",
-  "errs" : 15,
+  "date" : "Tue, 19 Mar, 2024 17:48:34 +0000",
+  "dateISO8601" : "2024-03-19T17:48:34+00:00",
+  "errs" : 462,
   "warnings" : 1,
-  "hints" : 6,
+  "hints" : 77,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 3650081880
+  "maxMemory" : 3665635552
 }
