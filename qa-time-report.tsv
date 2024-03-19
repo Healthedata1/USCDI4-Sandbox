@@ -1,8 +1,8 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json	8985	-	0	0	0	0	0	0	4	46	0	0	0	0	0	0	0	0	0	0	122	136	0	0	0	4	0	1
-input/examples/Observation-average-blood-pressure.json	3720	23	0	0	0	0	0	0	1	257	0	0	0	0	0	0	0	0	0	0	36	49	0	0	0	0	0	0
-input/resources/StructureDefinition-us-core-average-blood-pressure.json	7404	23	1	0	0	0	0	138	0	134	0	0	1	0	0	0	0	3	0	0	718	3091	0	0	0	20	0	2
-input/resources/StructureDefinition-us-core-patient.json	23836	26	0	0	0	0	0	83	0	80	0	0	0	0	0	0	0	1	0	0	519	1077	0	0	0	18	1	3
-input/resources/ValueSet-uscore-common-sdoh-assessments.json	3041	19	0	0	0	0	0	0	0	157	0	0	0	0	0	0	0	1	0	0	30	16636	0	0	0	1	0	0
-input/resources/ValueSet-uscore-pa-codes.json	2547	18	0	0	0	0	0	0	1	66	0	0	0	0	0	0	0	0	0	0	21	258	0	0	0	1	0	0
-input/resources/capabilitystatement-us-core-server.json	424691	64	0	0	0	0	0	0	9	7	0	0	0	0	0	0	0	0	0	0	831	209	0	1	0	30	0	2
+/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json	8985	-	0	0	0	0	0	0	5	65	0	0	0	0	0	0	0	1	0	0	96	143	0	0	0	5	0	1
+input/examples/Observation-average-blood-pressure.json	3720	24	1	0	0	0	0	0	0	501	0	0	0	0	0	0	0	0	0	0	29	37	0	0	0	0	0	0
+input/resources/StructureDefinition-us-core-average-blood-pressure.json	7404	24	0	0	0	0	0	171	0	127	0	0	0	0	0	0	0	4	0	0	665	2864	0	0	0	27	0	2
+input/resources/StructureDefinition-us-core-patient.json	23836	24	0	0	0	0	0	109	0	78	0	0	1	0	0	0	0	2	0	0	634	1151	0	0	0	20	0	2
+input/resources/ValueSet-uscore-common-sdoh-assessments.json	3041	17	0	0	0	0	0	0	1	237	0	0	0	0	0	0	0	0	0	0	29	18088	0	0	0	1	0	0
+input/resources/ValueSet-uscore-pa-codes.json	2547	20	1	0	0	0	0	0	0	94	0	0	0	0	0	0	0	0	0	0	21	290	0	0	0	0	0	0
+input/resources/capabilitystatement-us-core-server.json	424691	67	0	0	0	0	0	0	10	8	0	0	0	0	0	0	0	0	0	0	886	135	0	1	0	46	0	1

@@ -3,7 +3,7 @@ USCDI4_1Sandbox : Validation Results
 
 err = 462, warn = 1, info = 77
 IG Publisher Version: 1.6.2
-Generated Tue Mar 19 17:51:52 UTC 2024. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+Generated Tue Mar 19 18:07:01 UTC 2024. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
  Build Errors : 459 / 0 / 0
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 0 / 0 / 2
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-average-blood-pressure : 3 / 0 / 7
@@ -470,7 +470,7 @@ ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/index.html#/html/bod
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 5821, column 6: The link 'CodeSystem-condition-category.html' for "US Core Condition Category Extension Codes" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 5841, column 6: The link 'CodeSystem-us-core-documentreference-category.html' for "US Core DocumentReferences Category Codes" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 5861, column 6: The link 'CodeSystem-us-core-provenance-participant-type.html' for "US Core Provenance Participant Type Extension Codes" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/scopes.html#/html/body/div/div/div/div/div/p/a at Line 242, column 179: The link 'hhttps://hl7.org/fhir/smart-app-launch/STU2/token-introspection.html#token-introspection' for "Token Introspection" cannot be resolved
+ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/scopes.html#/html/body/div/div/div/div/div/p/a at Line 249, column 179: The link 'hhttps://hl7.org/fhir/smart-app-launch/STU2/token-introspection.html#token-introspection' for "Token Introspection" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/p/a at Line 1124, column 45: The link 'assessments-valuesets.csv' for "csv" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/p/a at Line 1124, column 92: The link 'assessments-valuesets.xlsx' for "excel" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json ==
