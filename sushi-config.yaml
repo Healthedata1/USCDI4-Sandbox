@@ -183,9 +183,8 @@ parameters:
   #path-pages:
     #- input/pagecontent
     #- fsh-generated/includes
-#- code: path-liquid #yes
-  #  value: #path #A relative path that contains liquid templates for generating narrative
-  # path-liquid: input/images/liquid
+  path-liquid: #A  list of relative paths that contains liquid templates for generating narrative
+    - input/images/liquid
   excludexml: true
   excludejson: false
   excludettl: true

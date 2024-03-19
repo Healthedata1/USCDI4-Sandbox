@@ -3,3 +3,4 @@
 [USCoreCommonSDOHAssessments]: ValueSet-uscore-common-sdoh-assessments.html
 [USCorePaCodesValueSet]: ValueSet-uscore-pa-codes.html
 [USCorePatientProfile]: StructureDefinition-us-core-patient.html
+[UsCoreServerCapabilityStatement]: CapabilityStatement-us-core-server.html

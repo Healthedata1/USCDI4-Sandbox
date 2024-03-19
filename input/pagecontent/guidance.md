@@ -28,4 +28,64 @@ The table below lists the US Core Profile and FHIR Resources used for the corres
 
 
 
+### Referencing US Core Profiles
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+### Contained Resources
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+### Suppressed Data
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+### SNOMED CT United States Edition
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+#### SNOMED CT Edition and Version Options
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+###  Using UCUM codes in the [Quantity] datatype
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+### Representing Entered in Error Information
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+### Representing Deleted Information
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+### Narrative
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+### Language Support
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+### Timezone and Time Offsets (*STRAWMAN PROPOSAL*)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+### Read (Fetch) Syntax
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+### Search Syntax
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+### Searching Multiple Patients
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh
+
+### Searching Multiple Patients
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh
+
+### Searching using lastUpdated
+
+<div class="bg-success" markdown="1">
+👉👉👉 Last_update guidance here.... 👈👈👈
+</div><!-- new-content -->
+
+### Compartment Based Search
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+### Across Platform Searches
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+### Limiting The Number Of Search Results
+
+
 {% include link-list.md %}
