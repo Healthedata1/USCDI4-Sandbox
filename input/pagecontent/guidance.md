@@ -88,8 +88,8 @@ Servers that can accurately populate [`Meta.lastUpdated`](#) **SHOULD** support 
 <div class="stu-note" markdown="1">
 Many servers are unable to populate the `Meta.lastUpdated` element accurately. However,
 they **SHOULD** expose a method for clients to know if there are new or modified resources since their last polling time and advertise that mechanism in their CapabilityStatement.  Work is in progress to:
-- Define an alternative search parameter that provides similar functionality. (see FHIR-45012 - Extension for tracking changes in facade contexts).
-- Enable Subscriptions for notifications on relevant events as an alternative to search polling.
+- Define an alternative FHIR search parameter that provides similar functionality. (see FHIR-45012 - Extension for tracking changes in facade contexts).
+- Enable [FHIR Topic-Based Subscription](#) for notifications on relevant events as an alternative to search polling.
 </div><!-- stu-note -->
 
 </div><!-- new-content -->
