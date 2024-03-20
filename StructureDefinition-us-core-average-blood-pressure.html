@@ -1699,30 +1699,6 @@ Summary
   </li>
 </ol>
 
-<div class="bg-success">
-
-  <ol>
-    <li><strong>SHOULD</strong> support searching using  <strong><a name="l18081">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l18086">​</a><a href="SearchParameter-us-core-observation-code.html"><code class="language-plaintext highlighter-rouge">code</code></a></strong> and <strong><a name="l18091">​</a><a href="SearchParameter-us-core-observation-date.html"><code class="language-plaintext highlighter-rouge">_lastUpdated</code></a></strong> search parameters:
-      <ul>
-        <li>including optional support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">code</code> (e.g.<code class="language-plaintext highlighter-rouge">code={system|}[code],{system|}[code],...</code>)</li>
-        <li>including support for these <code class="language-plaintext highlighter-rouge">date</code> comparators: <code class="language-plaintext highlighter-rouge">gt,lt,ge,le</code></li>
-        <li>including optional support for <em>AND</em> search on <code class="language-plaintext highlighter-rouge">date</code> (e.g.<code class="language-plaintext highlighter-rouge">date=[date]&amp;date=[date]]&amp;...</code>)</li>
-      </ul>
-
-      <p><code class="language-plaintext highlighter-rouge">GET [base]/Observation?patient={Type/}[id]&amp;code={system|}[code]{,{system|}[code],...}&amp;_lastUpdated={gt|lt|ge|le}[date]{&amp;date={gt|lt|ge|le}[date]&amp;...}</code></p>
-
-      <p>Example:</p>
-
-      <ol>
-        <li>GET [base]/Observation?patient=1186747&amp;code=http://loinc.org|8867-4,http://loinc.org|85354-9,http://loinc.org|96607-7&amp;_lastUpdated=ge2024-03-19</li>
-      </ol>
-
-      <p><em>Implementation Notes:</em> Fetches a bundle of all Observation resources for the specified patient and code(s) based on <strong><em>the last time they were changed</em></strong>. <strong>SHOULD</strong> support search by multiple codes. ([how to search by reference] and [how to search by token] and [how to search by date]. <strong><em>See the <a href="guidance.html#searching-using-lastupdated">General Guidance</a> section for additional guidance on searching using <code class="language-plaintext highlighter-rouge">_lastUpdated</code>.</em></strong>)</p>
-    </li>
-  </ol>
-</div>
-  <!-- new-content -->
-
 
 </div>
 
@@ -1775,7 +1751,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 19, 2024 18:03+0000">2024-03-19</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 20, 2024 22:03+0000">2024-03-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

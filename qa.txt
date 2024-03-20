@@ -1,17 +1,17 @@
 USCDI4_1Sandbox : Validation Results
 =========================================
 
-err = 462, warn = 1, info = 77
-IG Publisher Version: 1.6.2
-Generated Tue Mar 19 18:07:01 UTC 2024. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
- Build Errors : 459 / 0 / 0
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 0 / 0 / 2
+err = 460, warn = 1, info = 73
+IG Publisher Version: 1.6.3
+Generated Wed Mar 20 22:06:52 UTC 2024. FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi4-sandbox)
+ Build Errors : 456 / 0 / 0
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/examples/Observation-average-blood-pressure : 3 / 0 / 7
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-average-blood-pressure : 3 / 0 / 2
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient : 3 / 1 / 2
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-common-sdoh-assessments : 4 / 0 / 2
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-pa-codes : 4 / 0 / 1
- /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/capabilitystatement-us-core-server : 445 / 0 / 69
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-average-blood-pressure : 3 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient : 3 / 1 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-common-sdoh-assessments : 3 / 0 / 2
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-pa-codes : 3 / 0 / 1
+ /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/capabilitystatement-us-core-server : 445 / 0 / 68
 </table>
 == n/a ==
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/liquid/expectation_handler.html: Unable to Parse HTML - does not start with tag. Found { at line 1 column 0
@@ -422,9 +422,6 @@ ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-average-blood-pressure.html#/html/body/div/div/div/div/div/div/ol/li/strong/a at Line 1687, column 87: The link 'SearchParameter-us-core-observation-patient.html' for "patient" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-average-blood-pressure.html#/html/body/div/div/div/div/div/div/ol/li/strong/a at Line 1687, column 237: The link 'SearchParameter-us-core-observation-code.html' for "code" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-average-blood-pressure.html#/html/body/div/div/div/div/div/div/ol/li/strong/a at Line 1687, column 381: The link 'SearchParameter-us-core-observation-date.html' for "date" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-average-blood-pressure.html#/html/body/div/div/div/div/div/div/div/ol/li/strong/a at Line 1709, column 67: The link 'SearchParameter-us-core-observation-patient.html' for "patient" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-average-blood-pressure.html#/html/body/div/div/div/div/div/div/div/ol/li/strong/a at Line 1709, column 217: The link 'SearchParameter-us-core-observation-code.html' for "code" cannot be resolved
-ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-average-blood-pressure.html#/html/body/div/div/div/div/div/div/div/ol/li/strong/a at Line 1709, column 361: The link 'SearchParameter-us-core-observation-date.html' for "_lastUpdated" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/StructureDefinition-us-core-patient.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 1311, column 16: The link 'general-guidance.html#search-syntax' for "Search Syntax" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/fhir-write.html#/html/body/div/div/div/div/div/p/a at Line 197, column 492: The link '#Updating-Previously-Submitted-Observations' for "update" cannot be resolved (valid targets: [including-provenance-information, publish-box, segment-post-footer, markdown-toc-smart-configuration, markdown-toc-updating-previously-submitted-observations, markdown-toc-including-provenance-information, top, stripe, segment-footer, resource-submission, markdown-toc-writing-from-provider-facing-apps, segment-content, segment-header, writing-from-provider-facing-apps, discarding-observations, resource-retrieved-from-an-external-organization, bottom, smart-configuration, fhir-write-guidance-for-vital-sign-observations, markdown-toc-resource-submission, resources-not-retrieved-from-an-external-organization, markdown-toc-writing-from-patient-facing-apps, ig-status, markdown-toc, markdown-toc-discarding-observations, observation-elements, writing-from-patient-facing-apps, segment-navbar, updating-previously-submitted-observations, segment-breadcrumb]) - case is wrong ('updating-previously-submitted-observations')
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/fhir-write.html#/html/body/div/div/div/div/div/p/a at Line 211, column 747: The link '#Updating-Previously-Submitted-Observations' for "update" cannot be resolved (valid targets: [including-provenance-information, publish-box, segment-post-footer, markdown-toc-smart-configuration, markdown-toc-updating-previously-submitted-observations, markdown-toc-including-provenance-information, top, stripe, segment-footer, resource-submission, markdown-toc-writing-from-provider-facing-apps, segment-content, segment-header, writing-from-provider-facing-apps, discarding-observations, resource-retrieved-from-an-external-organization, bottom, smart-configuration, fhir-write-guidance-for-vital-sign-observations, markdown-toc-resource-submission, resources-not-retrieved-from-an-external-organization, markdown-toc-writing-from-patient-facing-apps, ig-status, markdown-toc, markdown-toc-discarding-observations, observation-elements, writing-from-patient-facing-apps, segment-navbar, updating-previously-submitted-observations, segment-breadcrumb]) - case is wrong ('updating-previously-submitted-observations')
@@ -474,7 +471,6 @@ ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/scopes.html#/html/bo
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/p/a at Line 1124, column 45: The link 'assessments-valuesets.csv' for "csv" cannot be resolved
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/docs/screening-and-assessments.html#/html/body/div/div/div/div/div/p/a at Line 1124, column 92: The link 'assessments-valuesets.xlsx' for "excel" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json ==
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == input/examples/Observation-average-blood-pressure.json ==
 INFORMATION: Observation/average-blood-pressure: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure|0.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Observation/average-blood-pressure: Observation.effective.ofType(Period): Constraint failed: vs-1: 'if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day' (defined in http://hl7.org/fhir/StructureDefinition/vitalsigns)
@@ -487,24 +483,20 @@ ERROR: Observation.text.div: Hyperlink 'Practitioner-practitioner-1.html' at 'di
 == input/resources/StructureDefinition-us-core-average-blood-pressure.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-average-blood-pressure.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure)
 ERROR: StructureDefinition/us-core-average-blood-pressure: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-average-blood-pressure: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-average-blood-pressure vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure
 == input/resources/StructureDefinition-us-core-patient.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-patient) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
 ERROR: StructureDefinition/us-core-patient: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'): The Implementation Guide contains no examples for this profile
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/StructureDefinition-us-core-patient: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/StructureDefinition/us-core-patient vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
 == input/resources/ValueSet-uscore-common-sdoh-assessments.json ==
 ERROR: ValueSet.where(url = 'http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-common-sdoh-assessments.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-common-sdoh-assessments) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments)
 ERROR: ValueSet/uscore-common-sdoh-assessments: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: Resource: This resource must have an OID assigned to cater for possible e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 INFORMATION: ValueSet.where(id = 'uscore-common-sdoh-assessments'): The value set expansion is too large, and only a subset has been displayed
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-common-sdoh-assessments: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-common-sdoh-assessments vs http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments
 == input/resources/ValueSet-uscore-pa-codes.json ==
 ERROR: ValueSet.where(url = 'http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-pa-codes.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-pa-codes) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes)
 ERROR: ValueSet/uscore-pa-codes: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-ERROR: Resource: This resource must have an OID assigned to cater for possible e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/ValueSet-uscore-pa-codes: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/ValueSet/uscore-pa-codes vs http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes
 == input/resources/capabilitystatement-us-core-server.json ==
 ERROR: CapabilityStatement.where(url = 'http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server'): Conformance resource /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/capabilitystatement-us-core-server.json - the canonical URL (http://www.fhir.org/guides/uscdi4-sandbox/CapabilityStatement/us-core-server) does not match the URL (http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server)
@@ -627,7 +619,6 @@ INFORMATION: CapabilityStatement/us-core-server: CapabilityStatement.rest[0].res
 ERROR: CapabilityStatement/us-core-server: CapabilityStatement.rest[0].resource[28].supportedProfile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|7.0.0-ballot' does not resolve
 ERROR: CapabilityStatement/us-core-server: CapabilityStatement.rest[0].resource[29].supportedProfile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen|7.0.0-ballot' does not resolve
 ERROR: CapabilityStatement/us-core-server: CapabilityStatement: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: /home/runner/work/USCDI4-Sandbox/USCDI4-Sandbox/input/resources/capabilitystatement-us-core-server: URL Mismatch http://www.fhir.org/guides/uscdi4-sandbox/CapabilityStatement/us-core-server vs http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server
 ERROR: CapabilityStatement.text.div: Hyperlink 'general-requirements.html' at 'div/ol/li/a' for 'General Requirements' does not resolve
 ERROR: CapabilityStatement.text.div: Hyperlink 'must-support.html' at 'div/ol/li/a' for 'Must Support' does not resolve
