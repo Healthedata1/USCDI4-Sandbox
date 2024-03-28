@@ -1,10 +1,10 @@
 <!-- This liquid script creates a US Core scope requirements table using input data from input/data/scopes.csv 
-include parameters: conformance='SHALL'|'SHOULD' see below for how used, and crud='cruds' not currently used -->
+include parameters: conformance='SHALL'|'SHOULD'|'MAY' see below for how used, and crud='cruds' not currently used -->
 
 {% assign rows = site.data.scopes -%}
 {%- assign granular_scopes = '' -%}
 {%- for item in rows -%}
-{%- unless item.add_scope == "FALSE" -%}
+{%- if item.resource_conformance == "SHALL" -%}
 {% for i in (1..6) %}
 {%- assign category =  'category_' | append: i -%}
 {%- assign category_conformance =  'category_' | append: i |append: '_conformance' -%}
@@ -26,6 +26,6 @@ include parameters: conformance='SHALL'|'SHOULD' see below for how used, and cru
 {%- assign granular_scopes =  granular_scopes | append: scope -%}
 {%- endif -%}
 {%- endfor -%}
-{%- endunless -%}
+{%- endif -%}
 {%- endfor -%}
 {%- assign granular_scopes = granular_scopes | split: "," | uniq | sort  %}

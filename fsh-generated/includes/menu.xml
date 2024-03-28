@@ -14,6 +14,19 @@
     <a href="index.html">IG Home</a>
   </li>
   <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-requirements.html">General Requirements</a>
+      </li>
+      <li>
+        <a href="scopes.html">SMART on FHIR Obligations and Capabilities</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
       <b class="caret"></b>
     </a>
@@ -33,7 +46,7 @@
     <a href="screening-and-assessments.html">Screening and Assessments</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifact Index</a>
+    <a href="profiles-and-extensions.html">Artifact Index</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>

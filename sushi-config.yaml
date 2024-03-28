@@ -145,6 +145,9 @@ pages:
           http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: draft 
 
+  general-requirements.md:
+    title: General Requirements
+
   # background.md:
   # # specification.md:
   # #   exchanging-clinical-data.md:
@@ -161,6 +164,8 @@ pages:
   screening-and-assessments.md:
     title: Screening and Assessments
 
+  profiles-and-extensions.md:
+  
   downloads.md:
     title: Downloads
 
@@ -215,13 +220,16 @@ releaseLabel: CI Build
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
+  Conformance:
+    General Requirements: general-requirements.html
+    SMART on FHIR Obligations and Capabilities: scopes.html
   Guidance: #guidance.html
     General Guidance: guidance.html
     SMART on FHIR Obligations and Capabilities: scopes.html
   Future: future.html
   Screening and Assessments: screening-and-assessments.html
   #Table of Contents: toc.html
-  Artifact Index: artifacts.html
+  Artifact Index: profiles-and-extensions.html
   Downloads: downloads.html
   Change Log: changes.html
   IG Page: 'ImplementationGuide.html'

@@ -63,17 +63,23 @@
         "reference": {
           "reference": "Observation/average-blood-pressure"
         },
-        "description": "This is an average blood pressure example for the *Vitalsigns Profile*.  It is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/) [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure).",
-        "name": "Average Blood Pressure Example",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure"
+        "name": "average-blood-pressure",
+        "exampleBoolean": true
       },
       {
         "reference": {
-          "reference": "StructureDefinition/us-core-average-blood-pressure"
+          "reference": "Condition/encounter-diagnosis-example1"
         },
-        "description": "To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It is based on the US Core Vital Signs Profile and identifies which *additional* core elements, extensions, vocabularies, and value sets  **SHALL** be present and constrains the way the elements are used when using the profile.  It provides the floor for standards development for specific use cases.",
-        "exampleBoolean": false,
-        "name": "US Core Average Blood Pressure Profile"
+        "description": "This example of a US Core Condition Encounter Diagnosis Profile illustrates its use to capture information about a patient's encounter diagnosis.",
+        "name": "Encounter Diagnosis Example 1",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+      },
+      {
+        "reference": {
+          "reference": "Observation/pack-years-example"
+        },
+        "name": "pack-years-example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"
       },
       {
         "reference": {
@@ -85,11 +91,11 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/uscore-pa-codes"
+          "reference": "StructureDefinition/us-core-condition-encounter-diagnosis"
         },
-        "description": "A starter set of Physical Activity codes based off the [Physical activity IG](https://hl7.org/fhir/us/physical-activity/)",
+        "description": "The US Core Condition Encounter Diagnosis Profile is based upon the core FHIR Condition Resource and meets the U.S. Core Data for Interoperability (USCDI) *Encounter Diagnosis* requirements. In version 5.0.0, The US Core Condition Profile has been split into the US Core Condition Encounter Diagnosis Profile and US Core Condition Problems and Health Concerns Profile. To promote interoperability and adoption through common implementation, this profile defines constraints and extensions on the Condition resource for the minimal set of data to record, search, and fetch information about an encounter diagnosis.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases.",
         "exampleBoolean": false,
-        "name": "US Core PA Codes ValueSet"
+        "name": "US Core Condition Encounter Diagnosis Profile"
       },
       {
         "reference": {
@@ -125,6 +131,11 @@
           ]
         },
         {
+          "nameUrl": "general-requirements.html",
+          "title": "General Requirements",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "future.html",
           "title": "Futures Page Mock UP",
           "generation": "markdown",
@@ -151,6 +162,11 @@
         {
           "nameUrl": "screening-and-assessments.html",
           "title": "Screening and Assessments",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles-and-extensions.html",
+          "title": "Profiles and Extensions",
           "generation": "markdown"
         },
         {

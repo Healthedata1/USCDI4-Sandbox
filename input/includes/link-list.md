@@ -5,3 +5,4 @@
 [extensible]: {{site.data.fhir.path}}terminologies.html#extensible
 [component]: foo.html
 [Additional USCDI Requirements]: must-support.html#additional-uscdi-requirements
+[current]: https://hl7.org/fhir/R5/terminologies.html#binding
