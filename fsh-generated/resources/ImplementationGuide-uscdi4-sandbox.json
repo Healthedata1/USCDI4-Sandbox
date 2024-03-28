@@ -61,25 +61,11 @@
     "resource": [
       {
         "reference": {
-          "reference": "Observation/average-blood-pressure"
-        },
-        "name": "average-blood-pressure",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Condition/encounter-diagnosis-example1"
         },
         "description": "This example of a US Core Condition Encounter Diagnosis Profile illustrates its use to capture information about a patient's encounter diagnosis.",
         "name": "Encounter Diagnosis Example 1",
         "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
-      },
-      {
-        "reference": {
-          "reference": "Observation/pack-years-example"
-        },
-        "name": "pack-years-example",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"
       },
       {
         "reference": {
@@ -247,6 +233,7 @@
         "code": "propagate-status",
         "value": "true"
       }
-    ]
+    ],
+    "extension": []
   }
 }
