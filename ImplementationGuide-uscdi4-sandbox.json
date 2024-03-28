@@ -18,7 +18,7 @@
   "name" : "USCDI4_1Sandbox",
   "title" : "HealtheData1 USCDI4 Sandbox",
   "status" : "active",
-  "date" : "2024-03-20T22:44:27+00:00",
+  "date" : "2024-03-28T04:27:37+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -792,26 +792,14 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "Observation/average-blood-pressure"
+        "reference" : "Condition/encounter-diagnosis-example1"
       },
-      "name" : "Average Blood Pressure Example",
-      "description" : "This is an average blood pressure example for the *Vitalsigns Profile*.  It is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/) [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure).",
-      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/us-core-average-blood-pressure"
-      },
-      "name" : "US Core Average Blood Pressure Profile",
-      "description" : "To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It is based on the US Core Vital Signs Profile and identifies which *additional* core elements, extensions, vocabularies, and value sets  **SHALL** be present and constrains the way the elements are used when using the profile.  It provides the floor for standards development for specific use cases.",
-      "exampleBoolean" : false
+      "name" : "Encounter Diagnosis Example 1",
+      "description" : "This example of a US Core Condition Encounter Diagnosis Profile illustrates its use to capture information about a patient's encounter diagnosis.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
     },
     {
       "extension" : [{
@@ -828,13 +816,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "ValueSet/uscore-pa-codes"
+        "reference" : "StructureDefinition/us-core-condition-encounter-diagnosis"
       },
-      "name" : "US Core PA Codes ValueSet",
-      "description" : "A starter set of Physical Activity codes based off the [Physical activity IG](https://hl7.org/fhir/us/physical-activity/)",
+      "name" : "US Core Condition Encounter Diagnosis Profile",
+      "description" : "The US Core Condition Encounter Diagnosis Profile is based upon the core FHIR Condition Resource and meets the U.S. Core Data for Interoperability (USCDI) *Encounter Diagnosis* requirements. In version 5.0.0, The US Core Condition Profile has been split into the US Core Condition Encounter Diagnosis Profile and US Core Condition Problems and Health Concerns Profile. To promote interoperability and adoption through common implementation, this profile defines constraints and extensions on the Condition resource for the minimal set of data to record, search, and fetch information about an encounter diagnosis.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases.",
       "exampleBoolean" : false
     },
     {
@@ -884,6 +872,19 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+          "valueCode" : "informative"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "general-requirements.html"
+        }],
+        "nameUrl" : "general-requirements.html",
+        "title" : "General Requirements",
         "generation" : "markdown"
       },
       {
@@ -949,6 +950,19 @@
         }],
         "nameUrl" : "screening-and-assessments.html",
         "title" : "Screening and Assessments",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+          "valueCode" : "informative"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "profiles-and-extensions.html"
+        }],
+        "nameUrl" : "profiles-and-extensions.html",
+        "title" : "Profiles and Extensions",
         "generation" : "markdown"
       },
       {

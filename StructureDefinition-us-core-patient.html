@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"8.3"}
-    h3,h4,h5,h6{--heading-prefix:"8.3"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.3"}
+    h3,h4,h5,h6{--heading-prefix:"10.3"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -84,6 +84,19 @@
     <a href="index.html">IG Home</a>
   </li>
   <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-requirements.html">General Requirements</a>
+      </li>
+      <li>
+        <a href="scopes.html">SMART on FHIR Obligations and Capabilities</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
       <b class="caret"></b>
     </a>
@@ -103,7 +116,7 @@
     <a href="screening-and-assessments.html">Screening and Assessments</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifact Index</a>
+    <a href="profiles-and-extensions.html">Artifact Index</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
@@ -252,7 +265,7 @@
 
 <p><b>Usage:</b></p>
 <ul>
- <li>Refer to this Resource Profile: <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-careteam.html">US Core CareTeam Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a><span onClick="document.getElementById('rr_tref').innerHTML = document.getElementById('rr2_tref').innerHTML" id="rr_tref">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 26 more</span></span><span style="display: none" id="rr2_tref">, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-coverage.html">US Core Coverage Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note Exchange</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-goal.html">US Core Goal Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-implantable-device.html">US Core Implantable Device Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-sexual-orientation.html">US Core Observation Sexual Orientation Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-specimen.html">US Core Specimen Profile</a> and <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Profile</a></span></li>
+ <li>Refer to this Resource Profile: <a href="StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-careteam.html">US Core CareTeam Profile</a><span onClick="document.getElementById('rr_tref').innerHTML = document.getElementById('rr2_tref').innerHTML" id="rr_tref">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 27 more</span></span><span style="display: none" id="rr2_tref">, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-coverage.html">US Core Coverage Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note Exchange</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-goal.html">US Core Goal Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-implantable-device.html">US Core Implantable Device Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-sexual-orientation.html">US Core Observation Sexual Orientation Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a>, <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-specimen.html">US Core Specimen Profile</a> and <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Profile</a></span></li>
 </ul>
 
 
@@ -1304,7 +1317,7 @@ Summary
 
 <ul>
   <li>See the <a href="scopes.html#scopes-format">Scopes Format</a> section for a description of the SMART scopes syntax.</li>
-  <li><a name="l11586">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l11612">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
   <li>See the [General Requirements] section for additional rules and expectations when a server requires status parameters.</li>
   <li>
     <table>
@@ -1383,7 +1396,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 20, 2024 22:44+0000">2024-03-20</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 28, 2024 04:27+0000">2024-03-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

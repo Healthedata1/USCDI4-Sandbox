@@ -15,6 +15,34 @@
       "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-condition-encounter-diagnosis.html" : "US Core Condition Encounter Diagnosis Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-condition-encounter-diagnosis.html" : "US Core Condition Encounter Diagnosis Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
       "version" : "4.0.1",
       "status" : "active",
@@ -75,15 +103,6 @@
       "name" : "USCoreCommonSDOHAssessments",
       "title" : "US Core Common SDOH Assessments ValueSet",
       "description" : "Common SDOH assessment concepts covering the following categories (Gravity Project SDOH Domains):\n - Food (Food Insecurity)\n - Housing (Housing Instability)\n - Health (Social Connection, Stress)\n - Employment (Employment Status)\n - Care (SDOH Category Unspecified)\n - Transit (Transportation Insecurity)\n - Money (Financial Insecurity)\n - Goods (Material Hardship)\n - Education (SDOH Category Unspecified)\n - Legal (SDOH Category Unspecified)",
-      "systems" : ["http://loinc.org"]
-    },
-    {
-      "url" : "http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes",
-      "version" : "0.0.0",
-      "status" : "draft",
-      "name" : "USCorePaCodesValueSet",
-      "title" : "US Core PA Codes ValueSet",
-      "description" : "A starter set of Physical Activity codes based off the [Physical activity IG](https://hl7.org/fhir/us/physical-activity/)",
       "systems" : ["http://loinc.org"]
     }
   ]

@@ -7,11 +7,11 @@
     "name" : "UsCoreServerCapabilityStatement"
   },
   {
-    "id" : "us-core-average-blood-pressure",
+    "id" : "us-core-condition-encounter-diagnosis",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis",
     "version" : "0.0.0",
-    "name" : "USCoreAverageBloodPressureProfile"
+    "name" : "USCoreConditionEncounterDiagnosisProfile"
   },
   {
     "id" : "us-core-patient",
@@ -26,13 +26,6 @@
     "url" : "http://hl7.org/fhir/us/core/ValueSet/uscore-common-sdoh-assessments",
     "version" : "0.0.0",
     "name" : "USCoreCommonSDOHAssessments"
-  },
-  {
-    "id" : "uscore-pa-codes",
-    "type" : "ValueSet",
-    "url" : "http://hl7.org/fhir/us/core/ValueSet/uscore-pa-codes",
-    "version" : "0.0.0",
-    "name" : "USCorePaCodesValueSet"
   },
   {
     "id" : "uscdi4-sandbox",

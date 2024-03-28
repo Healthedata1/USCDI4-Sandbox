@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -84,6 +84,19 @@
     <a href="index.html">IG Home</a>
   </li>
   <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-requirements.html">General Requirements</a>
+      </li>
+      <li>
+        <a href="scopes.html">SMART on FHIR Obligations and Capabilities</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
       <b class="caret"></b>
     </a>
@@ -103,7 +116,7 @@
     <a href="screening-and-assessments.html">Screening and Assessments</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifact Index</a>
+    <a href="profiles-and-extensions.html">Artifact Index</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
@@ -499,7 +512,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tbody>
 </table>
 
-<p>Each profile’s <em>Quick Start</em> section shows searches by category. Although not defined in US Core Procedure, implementers can categorize procedures using US Core Category or infer the context by inspecting the referenced ServiceRequest. Similarly, they can review the Questionnaire’s metadata to determine US Core QuestionnaireResponse’s context.</p>
+<p>Each profile’s <em>Quick Start</em> section shows searches by category if the category element is defined in the profile. The category element is optional in US Core Procedure and US Core Goal, but implementers can categorize them using a US Core Category code or infer the context by inspecting the referenced ServiceRequest if available. Similarly, they can review the Questionnaire’s metadata to determine US Core QuestionnaireResponse’s context. Although not defined in US Core Procedure, implementers can categorize procedures using US Core Category or infer the context by inspecting the referenced ServiceRequest. Similarly, they can review the Questionnaire’s metadata to determine US Core QuestionnaireResponse’s context.</p>
 
 <p><span class="bg-warning">Clients need to understand that data categorization is somewhat subjective. The categorization applied by the source may not align with the client’s expectations. Clients may find it more beneficial to use queries based on a specific code or set of codes or to perform additional client-side filtering of query results.</span>  <!-- bg-warning --></p>
 
@@ -1121,7 +1134,7 @@ to represent conclusions or diagnoses pertaining to drug misuse or abuse. In man
 </tbody>
 </table>
 
-<p><a name="l1295">​</a>This information is also available as a <a href="assessments-valuesets.csv">csv</a> or <a href="assessments-valuesets.xlsx">excel</a> file:</p>
+<p><a name="l1318">​</a>This information is also available as a <a href="assessments-valuesets.csv">csv</a> or <a href="assessments-valuesets.xlsx">excel</a> file:</p>
 
 <h3 id="-proposed-updates--1">&#x1F446;&#x1F446;&#x1F446;&#x1F446;&#x1F446; Proposed Updates &#x1F446;&#x1F446;&#x1F446;&#x1F446;&#x1F446;&#x1F446;</h3>
 
@@ -1275,7 +1288,7 @@ to represent conclusions or diagnoses pertaining to drug misuse or abuse. In man
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 20, 2024 22:44+0000">2024-03-20</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 28, 2024 04:27+0000">2024-03-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,8 +1,7 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json	8985	-	0	0	0	0	0	0	4	66	0	0	0	0	0	0	0	1	0	0	90	96	0	0	1	4	0	3
-input/examples/Observation-average-blood-pressure.json	3720	21	0	0	0	0	0	0	0	349	0	0	0	0	0	0	0	0	0	0	25	41	0	0	0	0	0	0
-input/resources/StructureDefinition-us-core-average-blood-pressure.json	7404	19	0	0	0	0	0	121	0	127	0	0	1	0	0	0	0	3	0	0	647	3948	0	0	0	21	0	5
-input/resources/StructureDefinition-us-core-patient.json	23836	21	0	0	0	0	0	148	0	70	0	0	0	0	0	0	0	1	0	0	499	992	0	0	0	20	0	2
-input/resources/ValueSet-uscore-common-sdoh-assessments.json	3041	16	1	0	0	0	0	0	0	149	0	0	0	0	0	0	0	0	0	0	21	16829	0	0	0	1	0	0
-input/resources/ValueSet-uscore-pa-codes.json	2547	15	0	0	0	0	0	0	1	58	0	0	0	0	0	0	0	0	0	0	14	225	0	0	0	0	0	0
-input/resources/capabilitystatement-us-core-server.json	424691	72	0	0	0	0	0	0	12	2	0	0	0	0	0	0	0	0	0	0	815	201	0	1	0	36	0	6
+/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json	9166	-	0	0	0	0	0	0	5	50	0	0	0	0	0	0	0	0	0	0	121	105	0	0	0	5	0	1
+input/examples/condition-encounter-diagnosis-example1.json	1435	25	0	0	0	0	0	0	0	173	0	0	0	0	0	0	0	0	0	0	19	26	0	0	0	0	0	0
+input/resources/StructureDefinition-us-core-condition-encounter-diagnosis.json	10686	24	0	0	0	0	0	81	1	65	0	0	1	0	0	0	0	2	0	0	355	2170	0	0	0	12	0	1
+input/resources/StructureDefinition-us-core-patient.json	23836	22	0	0	0	0	0	90	0	96	0	0	0	0	0	0	0	2	0	0	594	1286	0	0	0	20	0	1
+input/resources/ValueSet-uscore-common-sdoh-assessments.json	3041	16	1	0	0	0	0	0	0	414	0	0	0	0	0	0	0	0	0	0	22	14178	0	0	0	2	0	0
+input/resources/capabilitystatement-us-core-server.json	424691	70	0	0	0	0	0	0	12	7	0	0	0	0	0	0	0	1	0	0	869	141	0	2	0	29	0	7

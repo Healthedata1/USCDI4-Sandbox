@@ -5,10 +5,10 @@
   "jurisdiction": "US",
   "extensions": [],
   "profiles": {
-    "Observation": [
+    "Condition": [
       {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure",
-        "title": "US Core Average Blood Pressure Profile"
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis",
+        "title": "US Core Condition Encounter Diagnosis Profile"
       }
     ],
     "Patient": [
@@ -37,6 +37,9 @@
     "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination": [
       "CapabilityStatement.rest.resource"
     ],
+    "http://hl7.org/fhir/StructureDefinition/condition-assertedDate": [
+      "Condition"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -52,21 +55,11 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-suppress": [
       "StructureDefinition.differential.element.example"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
-      "StructureDefinition.snapshot.element"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
       "StructureDefinition.differential.element.type",
-      "StructureDefinition.snapshot.element.type"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/instance-description": [
-      "Observation.meta"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/instance-name": [
-      "Observation.meta"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.snapshot.element"
+      "StructureDefinition.differential.element.type.targetProfile",
+      "StructureDefinition.snapshot.element.type",
+      "StructureDefinition.snapshot.element.type.targetProfile"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -85,6 +78,10 @@
       "ImplementationGuide.definition.page.page.page",
       "StructureDefinition",
       "ValueSet"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"

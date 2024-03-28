@@ -1,152 +1,147 @@
 {
-  "date" : "Wed, 20 Mar, 2024 22:44:27 +0000",
+  "date" : "Thu, 28 Mar, 2024 04:27:37 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json",
-      "size" : 8985,
+      "size" : 9166,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 45,
-          "length" : 29
+          "start" : 49,
+          "length" : 19
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 46,
-          "length" : 4
+          "start" : 50,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 46,
-          "length" : 66
+          "start" : 50,
+          "length" : 50
+        },
+        {
+          "activity" : "validate",
+          "start" : 56,
+          "length" : 649
+        },
+        {
+          "activity" : "generate1",
+          "start" : 60,
+          "length" : 121
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 105
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 240,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 248,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/condition-encounter-diagnosis-example1.json",
+      "size" : 1435,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 49,
+          "length" : 25
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 50,
+          "length" : 173
+        },
+        {
+          "activity" : "validate",
+          "start" : 57,
+          "length" : 3292
+        },
+        {
+          "activity" : "generate1",
+          "start" : 60,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 26
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-us-core-condition-encounter-diagnosis.json",
+      "size" : 10686,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 49,
+          "length" : 24
+        },
+        {
+          "activity" : "load",
+          "start" : 49,
+          "length" : 42
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 49,
+          "length" : 81
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 50,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 50,
+          "length" : 65
         },
         {
           "activity" : "validate",
           "start" : 52,
-          "length" : 651
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 53,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 55,
-          "length" : 90
-        },
-        {
-          "activity" : "generate2",
-          "start" : 58,
-          "length" : 96
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 236,
-          "length" : 1
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 236,
-          "length" : 4
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 243,
-          "length" : 3
-        }
-      ]
-    },
-    {
-      "name" : "input/examples/Observation-average-blood-pressure.json",
-      "size" : 3720,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 45,
-          "length" : 21
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 46,
-          "length" : 349
-        },
-        {
-          "activity" : "validate",
-          "start" : 53,
-          "length" : 1492
-        },
-        {
-          "activity" : "generate1",
-          "start" : 55,
-          "length" : 25
-        },
-        {
-          "activity" : "generate2",
-          "start" : 58,
-          "length" : 41
-        }
-      ]
-    },
-    {
-      "name" : "input/resources/StructureDefinition-us-core-average-blood-pressure.json",
-      "size" : 7404,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 45,
-          "length" : 19
-        },
-        {
-          "activity" : "load",
-          "start" : 45,
-          "length" : 24
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 45,
-          "length" : 121
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 46,
-          "length" : 127
-        },
-        {
-          "activity" : "validate",
-          "start" : 48,
-          "length" : 1530
+          "length" : 730
         },
         {
           "activity" : "checkConformanceResources",
-          "start" : 53,
+          "start" : 57,
           "length" : 1
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 53,
-          "length" : 3
+          "start" : 57,
+          "length" : 2
         },
         {
           "activity" : "generate1",
-          "start" : 55,
-          "length" : 647
+          "start" : 60,
+          "length" : 355
         },
         {
           "activity" : "generate2",
-          "start" : 58,
-          "length" : 3948
+          "start" : 65,
+          "length" : 2170
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 236,
-          "length" : 21
+          "start" : 240,
+          "length" : 12
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 243,
-          "length" : 5
+          "start" : 248,
+          "length" : 1
         }
       ]
     },
@@ -156,53 +151,53 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 45,
-          "length" : 21
+          "start" : 49,
+          "length" : 22
         },
         {
           "activity" : "load",
-          "start" : 45,
-          "length" : 30
+          "start" : 49,
+          "length" : 20
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 45,
-          "length" : 148
+          "start" : 49,
+          "length" : 90
         },
         {
           "activity" : "generateNarratives",
-          "start" : 46,
-          "length" : 70
+          "start" : 50,
+          "length" : 96
         },
         {
           "activity" : "validate",
-          "start" : 49,
-          "length" : 612
+          "start" : 52,
+          "length" : 659
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 53,
-          "length" : 1
+          "start" : 57,
+          "length" : 2
         },
         {
           "activity" : "generate1",
-          "start" : 55,
-          "length" : 499
+          "start" : 61,
+          "length" : 594
         },
         {
           "activity" : "generate2",
-          "start" : 62,
-          "length" : 992
+          "start" : 67,
+          "length" : 1286
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 236,
+          "start" : 240,
           "length" : 20
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 243,
-          "length" : 2
+          "start" : 248,
+          "length" : 1
         }
       ]
     },
@@ -212,84 +207,43 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 45,
+          "start" : 49,
           "length" : 16
         },
         {
           "activity" : "load-configure",
-          "start" : 45,
+          "start" : 49,
           "length" : 1
         },
         {
           "activity" : "load",
-          "start" : 45,
-          "length" : 24
+          "start" : 49,
+          "length" : 23
         },
         {
           "activity" : "generateNarratives",
-          "start" : 46,
-          "length" : 149
+          "start" : 50,
+          "length" : 414
         },
         {
           "activity" : "validate",
-          "start" : 46,
-          "length" : 960
+          "start" : 50,
+          "length" : 1359
         },
         {
           "activity" : "generate1",
-          "start" : 56,
-          "length" : 21
+          "start" : 61,
+          "length" : 22
         },
         {
           "activity" : "generate2",
-          "start" : 63,
-          "length" : 16829
+          "start" : 68,
+          "length" : 14178
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 236,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "input/resources/ValueSet-uscore-pa-codes.json",
-      "size" : 2547,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 45,
-          "length" : 15
-        },
-        {
-          "activity" : "load",
-          "start" : 45,
-          "length" : 16
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 46,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 46,
-          "length" : 58
-        },
-        {
-          "activity" : "validate",
-          "start" : 47,
-          "length" : 237
-        },
-        {
-          "activity" : "generate1",
-          "start" : 56,
-          "length" : 14
-        },
-        {
-          "activity" : "generate2",
-          "start" : 80,
-          "length" : 225
+          "start" : 240,
+          "length" : 2
         }
       ]
     },
@@ -299,53 +253,58 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 45,
-          "length" : 72
+          "start" : 49,
+          "length" : 70
         },
         {
           "activity" : "load",
-          "start" : 45,
-          "length" : 205
+          "start" : 49,
+          "length" : 170
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 46,
+          "start" : 50,
           "length" : 12
         },
         {
           "activity" : "generateNarratives",
-          "start" : 46,
-          "length" : 2
+          "start" : 50,
+          "length" : 7
         },
         {
           "activity" : "validate",
-          "start" : 50,
-          "length" : 2687
+          "start" : 53,
+          "length" : 3108
         },
         {
-          "activity" : "generate1",
-          "start" : 56,
-          "length" : 815
-        },
-        {
-          "activity" : "generate2",
-          "start" : 80,
-          "length" : 201
-        },
-        {
-          "activity" : "makeDependencies",
-          "start" : 82,
+          "activity" : "scanForUsageStats",
+          "start" : 57,
           "length" : 1
         },
         {
+          "activity" : "generate1",
+          "start" : 61,
+          "length" : 869
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 141
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 84,
+          "length" : 2
+        },
+        {
           "activity" : "generateValidationPack",
-          "start" : 236,
-          "length" : 36
+          "start" : 240,
+          "length" : 29
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 243,
-          "length" : 6
+          "start" : 248,
+          "length" : 7
         }
       ]
     }

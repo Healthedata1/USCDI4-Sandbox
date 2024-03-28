@@ -17,7 +17,7 @@
   <name value="USCDI4_1Sandbox"/>
   <title value="HealtheData1 USCDI4 Sandbox"/>
   <status value="active"/>
-  <date value="2024-03-20T22:44:27+00:00"/>
+  <date value="2024-03-28T04:27:37+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -587,25 +587,14 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Observation/average-blood-pressure"/>
+        <reference value="Condition/encounter-diagnosis-example1"/>
       </reference>
-      <name value="Average Blood Pressure Example"/>
-      <description value="This is an average blood pressure example for the *Vitalsigns Profile*.  It is based on the [Vital Signs with Qualifying Elements](http://hl7.org/fhir/us/vitals/STU1/) [Average Blood Pressure Profile](http://hl7.org/fhir/us/vitals/StructureDefinition/average-blood-pressure)."/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-average-blood-pressure"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/us-core-average-blood-pressure"/>
-      </reference>
-      <name value="US Core Average Blood Pressure Profile"/>
-      <description value="To promote interoperability and adoption through common implementation, this profile sets minimum expectations for the Observation resource to record, search, and fetch average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It is based on the US Core Vital Signs Profile and identifies which *additional* core elements, extensions, vocabularies, and value sets  **SHALL** be present and constrains the way the elements are used when using the profile.  It provides the floor for standards development for specific use cases."/>
-      <exampleBoolean value="false"/>
+      <name value="Encounter Diagnosis Example 1"/>
+      <description value="This example of a US Core Condition Encounter Diagnosis Profile illustrates its use to capture information about a patient's encounter diagnosis."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -620,13 +609,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="ValueSet/uscore-pa-codes"/>
+        <reference value="StructureDefinition/us-core-condition-encounter-diagnosis"/>
       </reference>
-      <name value="US Core PA Codes ValueSet"/>
-      <description value="A starter set of Physical Activity codes based off the [Physical activity IG](https://hl7.org/fhir/us/physical-activity/)"/>
+      <name value="US Core Condition Encounter Diagnosis Profile"/>
+      <description value="The US Core Condition Encounter Diagnosis Profile is based upon the core FHIR Condition Resource and meets the U.S. Core Data for Interoperability (USCDI) *Encounter Diagnosis* requirements. In version 5.0.0, The US Core Condition Profile has been split into the US Core Condition Encounter Diagnosis Profile and US Core Condition Problems and Health Concerns Profile. To promote interoperability and adoption through common implementation, this profile defines constraints and extensions on the Condition resource for the minimal set of data to record, search, and fetch information about an encounter diagnosis.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -670,6 +659,17 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="general-requirements.html"/>
+        </extension>
+        <nameUrl value="general-requirements.html"/>
+        <title value="General Requirements"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -725,6 +725,17 @@
         </extension>
         <nameUrl value="screening-and-assessments.html"/>
         <title value="Screening and Assessments"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="profiles-and-extensions.html"/>
+        </extension>
+        <nameUrl value="profiles-and-extensions.html"/>
+        <title value="Profiles and Extensions"/>
         <generation value="markdown"/>
       </page>
       <page>
