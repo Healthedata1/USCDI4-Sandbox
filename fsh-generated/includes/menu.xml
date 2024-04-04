@@ -45,8 +45,18 @@
   <li>
     <a href="screening-and-assessments.html">Screening and Assessments</a>
   </li>
-  <li>
-    <a href="profiles-and-extensions.html">Artifact Index</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifact Index
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles-and-extensions.html">Profiles and Extensions</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html">Search Parameters</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>

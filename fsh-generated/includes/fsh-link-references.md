@@ -7,3 +7,4 @@
 [USCoreConditionEncounterDiagnosisProfile]: StructureDefinition-us-core-condition-encounter-diagnosis.html
 [USCoreLaboratoryResultObservationProfile]: StructureDefinition-us-core-observation-lab.html
 [USCorePatientProfile]: StructureDefinition-us-core-patient.html
+[USCoreObservationLastupdated]: SearchParameter-us-core-observation-lastUpdated.html

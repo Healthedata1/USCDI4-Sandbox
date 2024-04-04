@@ -24,6 +24,7 @@
             {
                 "id": "Observation.meta.lastUpdated",
                 "path": "Observation.meta.lastUpdated",
+                "short": "When the resource last changed",
                 "mustSupport": true
             },
             {
