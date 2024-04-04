@@ -130,9 +130,9 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-laboratory-test-codes.html" : "US Core Laboratory Test Codes",
       "ValueSet-uscore-common-sdoh-assessments.html" : "US Core Common SDOH Assessments ValueSet",
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-laboratory-test-codes.html" : "US Core Laboratory Test Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -144,14 +144,14 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
       "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -223,8 +223,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1125"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes",
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-clinical-result-observation-category.html" : "US Core Clinical Result Observation Category"
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-clinical-result-observation-category.html" : "US Core Clinical Result Observation Category",
+      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
@@ -308,8 +308,8 @@
       "oids" : ["2.16.840.1.113883.6.121"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages",
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier"
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier",
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
     }
   ]
 }

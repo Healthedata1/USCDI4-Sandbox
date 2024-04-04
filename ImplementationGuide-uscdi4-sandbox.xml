@@ -17,7 +17,7 @@
   <name value="USCDI4_1Sandbox"/>
   <title value="HealtheData1 USCDI4 Sandbox"/>
   <status value="active"/>
-  <date value="2024-04-04T02:04:39+00:00"/>
+  <date value="2024-04-04T03:43:02+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -684,6 +684,17 @@
       <description value="The US Core Patient Profile meets the U.S. Core Data for Interoperability (USCDI) v3 'Patient Demographics' requirements. This profile sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource when using this profile to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases."/>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/us-core-observation-lastUpdated"/>
+      </reference>
+      <name value="USCoreObservationLastupdated"/>
+      <description value="**When the resource version last changed**  &#xA;**NOTE**: This US Core SearchParameter definition extends the usage context of the&#xA;[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)&#xA; - multipleAnd&#xA; - multipleOr&#xA; - comparator&#xA; - modifier&#xA; - chain"/>
+      <exampleBoolean value="false"/>
+    </resource>
     <page>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="informative"/>
@@ -780,6 +791,17 @@
         </extension>
         <nameUrl value="profiles-and-extensions.html"/>
         <title value="Profiles and Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="search-parameters-and-operations.html"/>
+        </extension>
+        <nameUrl value="search-parameters-and-operations.html"/>
+        <title value="Search Parameters"/>
         <generation value="markdown"/>
       </page>
       <page>

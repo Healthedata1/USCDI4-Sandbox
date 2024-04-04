@@ -25,6 +25,11 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
+      "SearchParameter.comparator",
+      "SearchParameter.multipleAnd",
+      "SearchParameter.multipleOr"
+    ],
     "http://hl7.org/fhir/StructureDefinition/condition-assertedDate": [
       "Condition"
     ],

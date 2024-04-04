@@ -115,8 +115,18 @@
   <li>
     <a href="screening-and-assessments.html">Screening and Assessments</a>
   </li>
-  <li>
-    <a href="profiles-and-extensions.html">Artifact Index</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifact Index
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles-and-extensions.html">Profiles and Extensions</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html">Search Parameters</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
@@ -282,7 +292,7 @@ updated:
 <ul>
   <li><a href="http://cts.nlm.nih.gov/fhir/">VSAC</a></li>
   <li><a href="http://hl7.org/fhir/R4/">FHIR</a></li>
-  <li><a name="l426">​</a><a href="terminology.html">US CORE</a></li>
+  <li><a name="l443">​</a><a href="terminology.html">US CORE</a></li>
   <li><a href="http://phinvads.cdc.gov/fhir/">PHINVADS</a></li>
   <li><a href="http://terminology.hl7.org/">THO</a></li>
 </ul>
@@ -513,7 +523,7 @@ updated:
 
 <tr>
 <td>15</td>
-<td><a name="l708">​</a><a href="ValueSet-birthsex.html">Birth Sex</a></td>
+<td><a name="l725">​</a><a href="ValueSet-birthsex.html">Birth Sex</a></td>
 <td>StructureDefinition/us-core-birthsex</td>
 <td>US CORE</td>
 </tr>
@@ -993,7 +1003,7 @@ updated:
 
 <tr>
 <td>47</td>
-<td><a name="l1400">​</a><a href="ValueSet-detailed-race.html">Detailed Race</a></td>
+<td><a name="l1417">​</a><a href="ValueSet-detailed-race.html">Detailed Race</a></td>
 <td>StructureDefinition/us-core-race</td>
 <td>US CORE</td>
 </tr>
@@ -1008,7 +1018,7 @@ updated:
 
 <tr>
 <td>48</td>
-<td><a name="l1416">​</a><a href="ValueSet-detailed-ethnicity.html">Detailed ethnicity</a></td>
+<td><a name="l1433">​</a><a href="ValueSet-detailed-ethnicity.html">Detailed ethnicity</a></td>
 <td>StructureDefinition/us-core-ethnicity</td>
 <td>US CORE</td>
 </tr>
@@ -1698,7 +1708,7 @@ updated:
 
 <tr>
 <td>94</td>
-<td><a name="l2198">​</a><a href="ValueSet-simple-language.html">Language codes with language and optionally a region modifier</a></td>
+<td><a name="l2215">​</a><a href="ValueSet-simple-language.html">Language codes with language and optionally a region modifier</a></td>
 <td>StructureDefinition/us-core-patient</td>
 <td>US CORE</td>
 </tr>
@@ -1998,7 +2008,7 @@ updated:
 
 <tr>
 <td>114</td>
-<td><a name="l2528">​</a><a href="ValueSet-omb-ethnicity-category.html">OMB Ethnicity Categories</a></td>
+<td><a name="l2545">​</a><a href="ValueSet-omb-ethnicity-category.html">OMB Ethnicity Categories</a></td>
 <td>StructureDefinition/us-core-ethnicity</td>
 <td>US CORE</td>
 </tr>
@@ -2013,7 +2023,7 @@ updated:
 
 <tr>
 <td>115</td>
-<td><a name="l2544">​</a><a href="ValueSet-omb-race-category.html">OMB Race Categories</a></td>
+<td><a name="l2561">​</a><a href="ValueSet-omb-race-category.html">OMB Race Categories</a></td>
 <td>StructureDefinition/us-core-race</td>
 <td>US CORE</td>
 </tr>
@@ -3003,7 +3013,7 @@ updated:
 
 <tr>
 <td>181</td>
-<td><a name="l4008">​</a><a href="ValueSet-us-core-clinical-note-type.html">US Core Clinical Note Type</a></td>
+<td><a name="l4025">​</a><a href="ValueSet-us-core-clinical-note-type.html">US Core Clinical Note Type</a></td>
 <td></td>
 <td>US CORE</td>
 </tr>
@@ -3018,7 +3028,7 @@ updated:
 
 <tr>
 <td>182</td>
-<td><a name="l4023">​</a><a href="ValueSet-us-core-clinical-result-observation-category.html">US Core Clinical Result Observation Category</a></td>
+<td><a name="l4040">​</a><a href="ValueSet-us-core-clinical-result-observation-category.html">US Core Clinical Result Observation Category</a></td>
 <td>StructureDefinition/us-core-observation-lab<br/>StructureDefinition/us-core-observation-clinical-result</td>
 <td>US CORE</td>
 </tr>
@@ -3033,7 +3043,7 @@ updated:
 
 <tr>
 <td>183</td>
-<td><a name="l4041">​</a><a href="ValueSet-us-core-condition-code.html">US Core Condition Codes</a></td>
+<td><a name="l4058">​</a><a href="ValueSet-us-core-condition-code.html">US Core Condition Codes</a></td>
 <td>StructureDefinition/us-core-medicationrequest<br/>StructureDefinition/us-core-condition-problems-health-concerns<br/>StructureDefinition/us-core-procedure<br/>StructureDefinition/us-core-servicerequest<br/>StructureDefinition/us-core-condition-encounter-diagnosis</td>
 <td>US CORE</td>
 </tr>
@@ -3048,7 +3058,7 @@ updated:
 
 <tr>
 <td>184</td>
-<td><a name="l4065">​</a><a href="ValueSet-us-core-diagnosticreport-category.html">US Core Diagnostic Report Category Codes</a></td>
+<td><a name="l4082">​</a><a href="ValueSet-us-core-diagnosticreport-category.html">US Core Diagnostic Report Category Codes</a></td>
 <td>StructureDefinition/us-core-diagnosticreport-note</td>
 <td>US CORE</td>
 </tr>
@@ -3063,7 +3073,7 @@ updated:
 
 <tr>
 <td>185</td>
-<td><a name="l4081">​</a><a href="ValueSet-us-core-discharge-disposition.html">US Core Discharge Disposition</a></td>
+<td><a name="l4098">​</a><a href="ValueSet-us-core-discharge-disposition.html">US Core Discharge Disposition</a></td>
 <td>StructureDefinition/us-core-encounter</td>
 <td>US CORE</td>
 </tr>
@@ -3078,7 +3088,7 @@ updated:
 
 <tr>
 <td>186</td>
-<td><a name="l4097">​</a><a href="ValueSet-us-core-documentreference-category.html">US Core DocumentReference Category</a></td>
+<td><a name="l4114">​</a><a href="ValueSet-us-core-documentreference-category.html">US Core DocumentReference Category</a></td>
 <td>StructureDefinition/us-core-documentreference</td>
 <td>US CORE</td>
 </tr>
@@ -3093,7 +3103,7 @@ updated:
 
 <tr>
 <td>187</td>
-<td><a name="l4113">​</a><a href="ValueSet-us-core-documentreference-type.html">US Core DocumentReference Type</a></td>
+<td><a name="l4130">​</a><a href="ValueSet-us-core-documentreference-type.html">US Core DocumentReference Type</a></td>
 <td>StructureDefinition/us-core-documentreference</td>
 <td>US CORE</td>
 </tr>
@@ -3108,7 +3118,7 @@ updated:
 
 <tr>
 <td>188</td>
-<td><a name="l4129">​</a><a href="ValueSet-us-core-encounter-type.html">US Core Encounter Type</a></td>
+<td><a name="l4146">​</a><a href="ValueSet-us-core-encounter-type.html">US Core Encounter Type</a></td>
 <td>StructureDefinition/us-core-encounter</td>
 <td>US CORE</td>
 </tr>
@@ -3123,7 +3133,7 @@ updated:
 
 <tr>
 <td>189</td>
-<td><a name="l4145">​</a><a href="ValueSet-us-core-goal-description.html">US Core Goal Codes</a></td>
+<td><a name="l4162">​</a><a href="ValueSet-us-core-goal-description.html">US Core Goal Codes</a></td>
 <td>StructureDefinition/us-core-goal</td>
 <td>US CORE</td>
 </tr>
@@ -3138,7 +3148,7 @@ updated:
 
 <tr>
 <td>190</td>
-<td><a name="l4161">​</a><a href="ValueSet-us-core-laboratory-test-codes.html">US Core Laboratory Test Codes</a></td>
+<td><a name="l4178">​</a><a href="ValueSet-us-core-laboratory-test-codes.html">US Core Laboratory Test Codes</a></td>
 <td>StructureDefinition/us-core-diagnosticreport-lab<br/>StructureDefinition/us-core-observation-lab</td>
 <td>US CORE</td>
 </tr>
@@ -3153,7 +3163,7 @@ updated:
 
 <tr>
 <td>191</td>
-<td><a name="l4179">​</a><a href="ValueSet-us-core-narrative-status.html">US Core Narrative Status</a></td>
+<td><a name="l4196">​</a><a href="ValueSet-us-core-narrative-status.html">US Core Narrative Status</a></td>
 <td>StructureDefinition/us-core-careplan</td>
 <td>US CORE</td>
 </tr>
@@ -3168,7 +3178,7 @@ updated:
 
 <tr>
 <td>192</td>
-<td><a name="l4195">​</a><a href="ValueSet-us-core-diagnosticreport-report-and-note-codes.html">US Core Non Laboratory Codes</a></td>
+<td><a name="l4212">​</a><a href="ValueSet-us-core-diagnosticreport-report-and-note-codes.html">US Core Non Laboratory Codes</a></td>
 <td>StructureDefinition/us-core-diagnosticreport-note</td>
 <td>US CORE</td>
 </tr>
@@ -3183,7 +3193,7 @@ updated:
 
 <tr>
 <td>193</td>
-<td><a name="l4211">​</a><a href="ValueSet-us-core-observation-value-codes.html">US Core Observation Value Codes (SNOMED-CT)</a></td>
+<td><a name="l4228">​</a><a href="ValueSet-us-core-observation-value-codes.html">US Core Observation Value Codes (SNOMED-CT)</a></td>
 <td></td>
 <td>US CORE</td>
 </tr>
@@ -3198,7 +3208,7 @@ updated:
 
 <tr>
 <td>194</td>
-<td><a name="l4226">​</a><a href="ValueSet-us-core-pregnancy-intent.html">US Core Pregnancy Intent Codes</a></td>
+<td><a name="l4243">​</a><a href="ValueSet-us-core-pregnancy-intent.html">US Core Pregnancy Intent Codes</a></td>
 <td>StructureDefinition/us-core-observation-pregnancyintent</td>
 <td>US CORE</td>
 </tr>
@@ -3213,7 +3223,7 @@ updated:
 
 <tr>
 <td>195</td>
-<td><a name="l4242">​</a><a href="ValueSet-us-core-pregnancy-status.html">US Core Pregnancy Status Codes</a></td>
+<td><a name="l4259">​</a><a href="ValueSet-us-core-pregnancy-status.html">US Core Pregnancy Status Codes</a></td>
 <td>StructureDefinition/us-core-observation-pregnancystatus</td>
 <td>US CORE</td>
 </tr>
@@ -3228,7 +3238,7 @@ updated:
 
 <tr>
 <td>196</td>
-<td><a name="l4258">​</a><a href="ValueSet-us-core-problem-or-health-concern.html">US Core Problem or Health Concern</a></td>
+<td><a name="l4275">​</a><a href="ValueSet-us-core-problem-or-health-concern.html">US Core Problem or Health Concern</a></td>
 <td>StructureDefinition/us-core-condition-problems-health-concerns</td>
 <td>US CORE</td>
 </tr>
@@ -3243,7 +3253,7 @@ updated:
 
 <tr>
 <td>197</td>
-<td><a name="l4274">​</a><a href="ValueSet-us-core-procedure-code.html">US Core Procedure Codes</a></td>
+<td><a name="l4291">​</a><a href="ValueSet-us-core-procedure-code.html">US Core Procedure Codes</a></td>
 <td>StructureDefinition/us-core-procedure<br/>StructureDefinition/us-core-servicerequest</td>
 <td>US CORE</td>
 </tr>
@@ -3258,7 +3268,7 @@ updated:
 
 <tr>
 <td>198</td>
-<td><a name="l4292">​</a><a href="ValueSet-us-core-provenance-participant-type.html">US Core Provenance Participant Type Codes</a></td>
+<td><a name="l4309">​</a><a href="ValueSet-us-core-provenance-participant-type.html">US Core Provenance Participant Type Codes</a></td>
 <td>StructureDefinition/us-core-provenance</td>
 <td>US CORE</td>
 </tr>
@@ -3273,7 +3283,7 @@ updated:
 
 <tr>
 <td>199</td>
-<td><a name="l4308">​</a><a href="ValueSet-us-core-screening-assessment-condition-category.html">US Core Screening Assessment Condition Category</a></td>
+<td><a name="l4325">​</a><a href="ValueSet-us-core-screening-assessment-condition-category.html">US Core Screening Assessment Condition Category</a></td>
 <td>StructureDefinition/us-core-condition-problems-health-concerns</td>
 <td>US CORE</td>
 </tr>
@@ -3288,7 +3298,7 @@ updated:
 
 <tr>
 <td>200</td>
-<td><a name="l4324">​</a><a href="ValueSet-us-core-screening-assessment-observation-category.html">US Core Screening Assessment Observation Category</a></td>
+<td><a name="l4341">​</a><a href="ValueSet-us-core-screening-assessment-observation-category.html">US Core Screening Assessment Observation Category</a></td>
 <td>StructureDefinition/us-core-observation-screening-assessment</td>
 <td>US CORE</td>
 </tr>
@@ -3303,7 +3313,7 @@ updated:
 
 <tr>
 <td>201</td>
-<td><a name="l4340">​</a><a href="ValueSet-us-core-servicerequest-category.html">US Core ServiceRequest Category Codes</a></td>
+<td><a name="l4357">​</a><a href="ValueSet-us-core-servicerequest-category.html">US Core ServiceRequest Category Codes</a></td>
 <td>StructureDefinition/us-core-servicerequest</td>
 <td>US CORE</td>
 </tr>
@@ -3318,7 +3328,7 @@ updated:
 
 <tr>
 <td>202</td>
-<td><a name="l4356">​</a><a href="ValueSet-us-core-sexual-orientation.html">US Core Sexual Orientation</a></td>
+<td><a name="l4373">​</a><a href="ValueSet-us-core-sexual-orientation.html">US Core Sexual Orientation</a></td>
 <td>StructureDefinition/us-core-observation-sexual-orientation</td>
 <td>US CORE</td>
 </tr>
@@ -3333,7 +3343,7 @@ updated:
 
 <tr>
 <td>203</td>
-<td><a name="l4372">​</a><a href="ValueSet-us-core-simple-observation-category.html">US Core Simple Observation Category</a></td>
+<td><a name="l4389">​</a><a href="ValueSet-us-core-simple-observation-category.html">US Core Simple Observation Category</a></td>
 <td>StructureDefinition/us-core-simple-observation</td>
 <td>US CORE</td>
 </tr>
@@ -3348,7 +3358,7 @@ updated:
 
 <tr>
 <td>204</td>
-<td><a name="l4388">​</a><a href="ValueSet-simple-observation.html">US Core Simple Observation Codes</a></td>
+<td><a name="l4405">​</a><a href="ValueSet-simple-observation.html">US Core Simple Observation Codes</a></td>
 <td></td>
 <td>US CORE</td>
 </tr>
@@ -3363,7 +3373,7 @@ updated:
 
 <tr>
 <td>205</td>
-<td><a name="l4403">​</a><a href="ValueSet-us-core-observation-smokingstatus-max.html">US Core Smoking Status Max-Binding</a></td>
+<td><a name="l4420">​</a><a href="ValueSet-us-core-observation-smokingstatus-max.html">US Core Smoking Status Max-Binding</a></td>
 <td></td>
 <td>US CORE</td>
 </tr>
@@ -3378,7 +3388,7 @@ updated:
 
 <tr>
 <td>206</td>
-<td><a name="l4418">​</a><a href="ValueSet-us-core-smoking-status-observation-codes.html">US Core Smoking Status Observation Codes</a></td>
+<td><a name="l4435">​</a><a href="ValueSet-us-core-smoking-status-observation-codes.html">US Core Smoking Status Observation Codes</a></td>
 <td>StructureDefinition/us-core-smokingstatus</td>
 <td>US CORE</td>
 </tr>
@@ -3393,7 +3403,7 @@ updated:
 
 <tr>
 <td>207</td>
-<td><a name="l4434">​</a><a href="ValueSet-us-core-observation-smoking-status-status.html">US Core Status for Smoking Status Observation</a></td>
+<td><a name="l4451">​</a><a href="ValueSet-us-core-observation-smoking-status-status.html">US Core Status for Smoking Status Observation</a></td>
 <td>StructureDefinition/us-core-smokingstatus</td>
 <td>US CORE</td>
 </tr>
@@ -3408,7 +3418,7 @@ updated:
 
 <tr>
 <td>208</td>
-<td><a name="l4450">​</a><a href="ValueSet-us-core-survey-codes.html">US Core Survey Codes</a></td>
+<td><a name="l4467">​</a><a href="ValueSet-us-core-survey-codes.html">US Core Survey Codes</a></td>
 <td>StructureDefinition/us-core-observation-screening-assessment</td>
 <td>US CORE</td>
 </tr>
@@ -3423,7 +3433,7 @@ updated:
 
 <tr>
 <td>209</td>
-<td><a name="l4466">​</a><a href="ValueSet-us-core-vital-signs.html">US Core Vital Signs ValueSet</a></td>
+<td><a name="l4483">​</a><a href="ValueSet-us-core-vital-signs.html">US Core Vital Signs ValueSet</a></td>
 <td>StructureDefinition/pediatric-bmi-for-age<br/>StructureDefinition/us-core-pulse-oximetry<br/>StructureDefinition/head-occipital-frontal-circumference-percentile<br/>StructureDefinition/us-core-bmi<br/>StructureDefinition/us-core-body-temperature<br/>StructureDefinition/us-core-respiratory-rate<br/>StructureDefinition/us-core-vital-signs<br/>StructureDefinition/pediatric-weight-for-height<br/>StructureDefinition/us-core-heart-rate<br/>StructureDefinition/us-core-head-circumference<br/>StructureDefinition/us-core-body-weight<br/>StructureDefinition/us-core-average-blood-pressure<br/>StructureDefinition/us-core-body-height<br/>StructureDefinition/us-core-blood-pressure</td>
 <td>US CORE</td>
 </tr>
@@ -3438,7 +3448,7 @@ updated:
 
 <tr>
 <td>210</td>
-<td><a name="l4508">​</a><a href="ValueSet-us-core-usps-state.html">USPS Two Letter Alphabetic Codes</a></td>
+<td><a name="l4525">​</a><a href="ValueSet-us-core-usps-state.html">USPS Two Letter Alphabetic Codes</a></td>
 <td>StructureDefinition/us-core-practitioner<br/>StructureDefinition/us-core-patient<br/>StructureDefinition/us-core-location<br/>StructureDefinition/us-core-jurisdiction<br/>StructureDefinition/us-core-organization</td>
 <td>US CORE</td>
 </tr>
@@ -3633,7 +3643,7 @@ updated:
 
 <ul>
   <li><a href="http://hl7.org/fhir/R4/">FHIR</a></li>
-  <li><a name="l4755">​</a><a href="terminology.html">US CORE</a>
+  <li><a name="l4772">​</a><a href="terminology.html">US CORE</a>
   <!-- - [PHINVADS](http://phinvads.cdc.gov/fhir/) --></li>
   <li><a href="http://terminology.hl7.org/">THO</a></li>
   <li><a href="http://snomed.info/sct">SNOMED</a></li>
@@ -5808,7 +5818,7 @@ updated:
 
 <tr>
 <td>111</td>
-<td><a name="l7483">​</a><a href="CodeSystem-us-core-category.html">US Core Category</a></td>
+<td><a name="l7500">​</a><a href="CodeSystem-us-core-category.html">US Core Category</a></td>
 <td><code>http://hl7.org/fhir/us/core/CodeSystem/us-core-category</code></td>
 <td>ValueSet/us-core-screening-assessment-observation-category<br/>ValueSet/us-core-simple-observation-category<br/>ValueSet/us-core-screening-assessment-condition-category<br/>ValueSet/us-core-servicerequest-category</td>
 <td>US CORE</td>
@@ -5828,7 +5838,7 @@ updated:
 
 <tr>
 <td>112</td>
-<td><a name="l7511">​</a><a href="CodeSystem-condition-category.html">US Core Condition Category Extension Codes</a></td>
+<td><a name="l7528">​</a><a href="CodeSystem-condition-category.html">US Core Condition Category Extension Codes</a></td>
 <td><code>http://hl7.org/fhir/us/core/CodeSystem/condition-category</code></td>
 <td>ValueSet/us-core-problem-or-health-concern</td>
 <td>US CORE</td>
@@ -5848,7 +5858,7 @@ updated:
 
 <tr>
 <td>113</td>
-<td><a name="l7533">​</a><a href="CodeSystem-us-core-documentreference-category.html">US Core DocumentReferences Category Codes</a></td>
+<td><a name="l7550">​</a><a href="CodeSystem-us-core-documentreference-category.html">US Core DocumentReferences Category Codes</a></td>
 <td><code>http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category</code></td>
 <td>ValueSet/us-core-documentreference-category</td>
 <td>US CORE</td>
@@ -5868,7 +5878,7 @@ updated:
 
 <tr>
 <td>114</td>
-<td><a name="l7555">​</a><a href="CodeSystem-us-core-provenance-participant-type.html">US Core Provenance Participant Type Extension Codes</a></td>
+<td><a name="l7572">​</a><a href="CodeSystem-us-core-provenance-participant-type.html">US Core Provenance Participant Type Extension Codes</a></td>
 <td><code>http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type</code></td>
 <td>ValueSet/us-core-provenance-participant-type</td>
 <td>US CORE</td>
@@ -6140,7 +6150,7 @@ updated:
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 4, 2024 02:04+0000">2024-04-04</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 4, 2024 03:43+0000">2024-04-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

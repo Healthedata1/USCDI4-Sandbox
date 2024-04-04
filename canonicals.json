@@ -1,5 +1,12 @@
 [
   {
+    "id" : "us-core-observation-lastUpdated",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-lastUpdated",
+    "version" : "0.0.0",
+    "name" : "USCoreObservationLastupdated"
+  },
+  {
     "id" : "us-core-condition-encounter-diagnosis",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis",

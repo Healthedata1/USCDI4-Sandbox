@@ -58,8 +58,8 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-laboratory-test-codes.html" : "US Core Laboratory Test Codes",
-      "ValueSet-uscore-common-sdoh-assessments.html" : "US Core Common SDOH Assessments ValueSet"
+      "ValueSet-uscore-common-sdoh-assessments.html" : "US Core Common SDOH Assessments ValueSet",
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-laboratory-test-codes.html" : "US Core Laboratory Test Codes"
     },
     {
       "url" : "http://snomed.info/sct",

@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "USCDI4_1Sandbox"] ; # 
   fhir:title [ fhir:v "HealtheData1 USCDI4 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-04-04T02:04:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-04T03:43:02+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -793,6 +793,18 @@
        fhir:name [ fhir:v "US Core Patient Profile" ] ;
        fhir:description [ fhir:v "The US Core Patient Profile meets the U.S. Core Data for Interoperability (USCDI) v3 'Patient Demographics' requirements. This profile sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource when using this profile to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi4-sandbox/SearchParameter/us-core-observation-lastUpdated> ;
+         fhir:reference [ fhir:v "SearchParameter/us-core-observation-lastUpdated" ]
+       ] ;
+       fhir:name [ fhir:v "USCoreObservationLastupdated" ] ;
+       fhir:description [ fhir:v "**When the resource version last changed**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
@@ -894,6 +906,17 @@
          ] ) ;
          fhir:name [ fhir:v "profiles-and-extensions.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Profiles and Extensions" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "informative" ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "search-parameters-and-operations.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "search-parameters-and-operations.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Search Parameters" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

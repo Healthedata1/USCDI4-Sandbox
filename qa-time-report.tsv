@@ -1,11 +1,12 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json	11185	-	0	0	0	0	0	0	5	71	0	0	0	0	0	0	0	1	0	0	106	125	0	0	0	8	0	2
-input/examples/condition-encounter-diagnosis-addl-legacycode-example1.json	1545	15	0	0	0	0	0	0	1	244	0	0	0	0	0	0	0	0	0	0	19	35	0	0	0	0	0	0
-input/examples/condition-encounter-diagnosis-example1.json	1435	16	1	0	0	0	0	0	0	129	0	0	0	0	0	0	0	0	0	0	14	34	0	0	0	0	0	0
-input/examples/condition-encounter-diagnosis-legacycode-example1.json	1365	20	0	0	0	0	0	0	0	48	0	0	0	0	0	0	0	0	0	0	16	36	0	0	0	0	0	0
-input/examples/condition-encounter-diagnosis-text-only-example1.json	1227	17	0	0	0	0	0	0	0	27	0	0	0	0	0	0	0	0	0	0	14	35	0	0	0	0	0	0
-input/examples/observation-serum-bun.json	1882	12	0	0	0	0	0	0	0	138	0	0	0	0	0	0	0	0	0	0	16	40	0	0	0	0	0	0
-input/resources/StructureDefinition-us-core-condition-encounter-diagnosis.json	10684	20	0	0	0	0	0	65	1	61	0	0	0	0	0	0	0	2	0	0	311	1559	0	0	0	18	0	1
-input/resources/StructureDefinition-us-core-observation-lab.json	9456	23	1	0	0	0	0	67	0	46	0	0	0	0	0	0	0	0	0	0	397	1021	0	0	0	17	0	1
-input/resources/StructureDefinition-us-core-patient.json	23836	23	0	0	0	0	0	87	0	133	0	0	1	0	0	0	0	1	0	0	539	1088	0	0	0	22	0	2
-input/resources/ValueSet-uscore-common-sdoh-assessments.json	3041	20	0	0	0	0	0	0	0	149	0	0	0	0	0	0	0	0	0	0	23	13737	0	0	0	2	0	0
+/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json	11879	-	0	0	0	0	0	0	5	57	0	0	0	0	0	0	0	1	0	0	120	216	0	0	0	5	0	1
+input/examples/condition-encounter-diagnosis-addl-legacycode-example1.json	1545	21	0	0	0	0	0	0	0	187	0	0	0	0	0	0	0	0	0	0	36	55	0	0	0	0	0	0
+input/examples/condition-encounter-diagnosis-example1.json	1435	22	0	0	0	0	0	0	1	130	0	0	0	0	0	0	0	0	0	0	30	47	0	0	0	0	0	0
+input/examples/condition-encounter-diagnosis-legacycode-example1.json	1365	17	0	0	0	0	0	0	0	86	0	0	0	0	0	0	0	0	0	0	30	42	0	0	0	0	0	0
+input/examples/condition-encounter-diagnosis-text-only-example1.json	1227	16	0	0	0	0	0	0	0	17	0	0	0	0	0	0	0	0	0	0	35	31	0	0	0	0	0	0
+input/examples/observation-serum-bun.json	1882	12	0	0	0	0	0	0	0	376	0	0	0	0	0	0	0	0	0	0	29	40	0	0	0	0	0	0
+input/resources/StructureDefinition-us-core-condition-encounter-diagnosis.json	10684	13	0	0	0	0	0	59	0	50	0	0	0	0	0	0	0	2	0	0	317	1648	0	0	0	13	0	1
+input/resources/StructureDefinition-us-core-observation-lab.json	9515	15	0	0	0	0	0	56	0	33	0	0	0	0	0	0	0	1	0	0	433	962	0	0	0	16	1	0
+input/resources/StructureDefinition-us-core-patient.json	23836	14	0	0	0	0	0	83	0	61	0	0	0	0	0	0	0	2	0	0	576	798	0	0	0	19	0	2
+input/resources/ValueSet-uscore-common-sdoh-assessments.json	3041	15	1	0	0	0	0	0	0	219	0	0	0	0	0	0	0	0	0	0	50	13894	0	0	0	2	0	0
+input/resources/searchparameter-us-core-observation-lastUpdated.json	6778	17	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	42	14	0	1	0	0	0	0
