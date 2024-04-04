@@ -6,3 +6,4 @@
 [component]: foo.html
 [Additional USCDI Requirements]: must-support.html#additional-uscdi-requirements
 [current]: https://hl7.org/fhir/R5/terminologies.html#binding
+[searching using lastUpdated]: guidance.html#searching-using-lastupdated

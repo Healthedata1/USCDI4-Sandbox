@@ -131,17 +131,14 @@
                                 },
                                 {
                                     "url": "documentation",
-                                    "valueMarkdown": "US Core Extensible definition of extensible"
-                                },
-                                {
-                                    "url": "shortDoco",
-                                    "valueString": "US Core Extensible"
+                                    "valueMarkdown": "US Core uses the current additional binding from FHIR R5 for this coded element for more flexibility when exchanging legacy and text-only data."
                                 }
                             ]
                         }
                     ],
                     "strength": "preferred",
-                    "description": "Valueset to describe the actual problem experienced by the patient"
+                    "description": "Valueset to describe the actual problem experienced by the patient",
+                    "valueSet": "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code"
                 },
                 "mapping": [
                     {

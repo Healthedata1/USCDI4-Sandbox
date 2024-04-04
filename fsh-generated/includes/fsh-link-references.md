@@ -1,5 +1,9 @@
+[encounter-diagnosis-example3]: Condition-encounter-diagnosis-example3.html
 [encounter-diagnosis-example1]: Condition-encounter-diagnosis-example1.html
+[encounter-diagnosis-example2]: Condition-encounter-diagnosis-example2.html
+[encounter-diagnosis-example4]: Condition-encounter-diagnosis-example4.html
+[serum-bun]: Observation-serum-bun.html
 [USCoreCommonSDOHAssessments]: ValueSet-uscore-common-sdoh-assessments.html
 [USCoreConditionEncounterDiagnosisProfile]: StructureDefinition-us-core-condition-encounter-diagnosis.html
+[USCoreLaboratoryResultObservationProfile]: StructureDefinition-us-core-observation-lab.html
 [USCorePatientProfile]: StructureDefinition-us-core-patient.html
-[UsCoreServerCapabilityStatement]: CapabilityStatement-us-core-server.html
