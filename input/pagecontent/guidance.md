@@ -78,9 +78,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at 
 <div class="bg-success" markdown="1">
 
 Servers that can accurately populate [`Meta.lastUpdated`](#) **SHOULD** support the [`_lastUpdated`](#) search parameter as defined in the core FHIR specifications. If `Meta.lastUpdated` is populated:
-- Any change in the resource implies a change in `Meta.lastUpdated`; conversely, an unchanged `Meta.lastUpdated` implies no change in the resource.
+<!-- - Any change in the resource implies a change in `Meta.lastUpdated`; conversely, an unchanged `Meta.lastUpdated` implies no change in the resource. -->
 - Note to clients that the most recent time does not necessarily reflect changes they can access. A record may change, but the client's view of the resource may not (for example, if the client is not authorized to see the changed data).
-- Servers cannot populate `Meta.lastUpdated` if they cannot update it per the rules in the FHIR core specification.
+<!-- - Servers cannot populate `Meta.lastUpdated` if they cannot update it per the rules in the FHIR core specification. -->
 - Supporting `Meta.lastUpdated` in a resource does not imply support for searches using the `_lastUpdated` search parameter.
 - Support for searches using the `_lastUpdated` search parameter does not require servers to support `Meta.lastUpdated`; servers can use an alternative method to reliably track changes to an instance.
 - Note to servers that updating the timestamp too frequently is better than missing updates.
@@ -88,7 +88,6 @@ Servers that can accurately populate [`Meta.lastUpdated`](#) **SHOULD** support 
 <div class="stu-note" markdown="1">
 Many servers are unable to populate the `Meta.lastUpdated` element accurately. However,
 they **SHOULD** expose a method for clients to know if there are new or modified resources since their last polling time and advertise that mechanism in their CapabilityStatement.  Work is in progress to:
-- Define an alternative FHIR search parameter that provides similar functionality. (see FHIR-45012 - Extension for tracking changes in facade contexts).
 - Enable [FHIR Topic-Based Subscription](#) for notifications on relevant events as an alternative to search polling.
 </div><!-- stu-note -->
 
