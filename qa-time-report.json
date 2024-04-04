@@ -1,50 +1,91 @@
 {
-  "date" : "Thu, 28 Mar, 2024 04:27:37 +0000",
+  "date" : "Thu, 04 Apr, 2024 02:04:39 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-uscdi4-sandbox.json",
-      "size" : 9166,
+      "size" : 11185,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 49,
-          "length" : 19
+          "start" : 45,
+          "length" : 15
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 50,
+          "start" : 45,
           "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 50,
-          "length" : 50
+          "start" : 45,
+          "length" : 71
         },
         {
           "activity" : "validate",
-          "start" : 56,
-          "length" : 649
+          "start" : 50,
+          "length" : 947
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 51,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 60,
-          "length" : 121
+          "start" : 53,
+          "length" : 106
         },
         {
           "activity" : "generate2",
-          "start" : 65,
-          "length" : 105
+          "start" : 56,
+          "length" : 125
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 240,
-          "length" : 5
+          "start" : 228,
+          "length" : 8
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 248,
+          "start" : 235,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/condition-encounter-diagnosis-addl-legacycode-example1.json",
+      "size" : 1545,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 15
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 45,
           "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 244
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 2457
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 35
         }
       ]
     },
@@ -54,93 +95,242 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 25
+          "start" : 44,
+          "length" : 16
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 45,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 50,
-          "length" : 173
+          "start" : 45,
+          "length" : 129
         },
         {
           "activity" : "validate",
-          "start" : 57,
-          "length" : 3292
+          "start" : 53,
+          "length" : 39
         },
         {
           "activity" : "generate1",
-          "start" : 60,
-          "length" : 19
+          "start" : 54,
+          "length" : 14
         },
         {
           "activity" : "generate2",
-          "start" : 65,
-          "length" : 26
+          "start" : 56,
+          "length" : 34
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/condition-encounter-diagnosis-legacycode-example1.json",
+      "size" : 1365,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 20
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 48
+        },
+        {
+          "activity" : "validate",
+          "start" : 53,
+          "length" : 38
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 36
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/condition-encounter-diagnosis-text-only-example1.json",
+      "size" : 1227,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 17
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 27
+        },
+        {
+          "activity" : "validate",
+          "start" : 53,
+          "length" : 38
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 35
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/observation-serum-bun.json",
+      "size" : 1882,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 12
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 138
+        },
+        {
+          "activity" : "validate",
+          "start" : 53,
+          "length" : 199
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 40
         }
       ]
     },
     {
       "name" : "input/resources/StructureDefinition-us-core-condition-encounter-diagnosis.json",
-      "size" : 10686,
+      "size" : 10684,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 24
+          "start" : 44,
+          "length" : 20
         },
         {
           "activity" : "load",
-          "start" : 49,
-          "length" : 42
+          "start" : 45,
+          "length" : 11
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 49,
-          "length" : 81
+          "start" : 45,
+          "length" : 65
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 50,
+          "start" : 45,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 50,
-          "length" : 65
+          "start" : 46,
+          "length" : 61
         },
         {
           "activity" : "validate",
-          "start" : 52,
-          "length" : 730
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 57,
-          "length" : 1
+          "start" : 47,
+          "length" : 831
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 57,
+          "start" : 51,
           "length" : 2
         },
         {
           "activity" : "generate1",
-          "start" : 60,
-          "length" : 355
+          "start" : 54,
+          "length" : 311
         },
         {
           "activity" : "generate2",
-          "start" : 65,
-          "length" : 2170
+          "start" : 56,
+          "length" : 1559
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 240,
-          "length" : 12
+          "start" : 228,
+          "length" : 18
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 248,
+          "start" : 235,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-us-core-observation-lab.json",
+      "size" : 9456,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 23
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 67
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 46
+        },
+        {
+          "activity" : "validate",
+          "start" : 48,
+          "length" : 910
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 397
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 1021
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 228,
+          "length" : 17
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 235,
           "length" : 1
         }
       ]
@@ -151,53 +341,58 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 22
+          "start" : 44,
+          "length" : 23
         },
         {
           "activity" : "load",
-          "start" : 49,
-          "length" : 20
+          "start" : 45,
+          "length" : 16
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 49,
-          "length" : 90
+          "start" : 45,
+          "length" : 87
         },
         {
           "activity" : "generateNarratives",
-          "start" : 50,
-          "length" : 96
+          "start" : 46,
+          "length" : 133
         },
         {
           "activity" : "validate",
-          "start" : 52,
-          "length" : 659
+          "start" : 49,
+          "length" : 942
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 50,
+          "length" : 1
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 57,
-          "length" : 2
+          "start" : 51,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 61,
-          "length" : 594
+          "start" : 54,
+          "length" : 539
         },
         {
           "activity" : "generate2",
-          "start" : 67,
-          "length" : 1286
+          "start" : 59,
+          "length" : 1088
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 240,
-          "length" : 20
+          "start" : 228,
+          "length" : 22
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 248,
-          "length" : 1
+          "start" : 235,
+          "length" : 2
         }
       ]
     },
@@ -207,104 +402,38 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 16
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 49,
-          "length" : 1
+          "start" : 45,
+          "length" : 20
         },
         {
           "activity" : "load",
-          "start" : 49,
+          "start" : 45,
+          "length" : 11
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 149
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 944
+        },
+        {
+          "activity" : "generate1",
+          "start" : 55,
           "length" : 23
         },
         {
-          "activity" : "generateNarratives",
-          "start" : 50,
-          "length" : 414
-        },
-        {
-          "activity" : "validate",
-          "start" : 50,
-          "length" : 1359
-        },
-        {
-          "activity" : "generate1",
-          "start" : 61,
-          "length" : 22
-        },
-        {
           "activity" : "generate2",
-          "start" : 68,
-          "length" : 14178
+          "start" : 60,
+          "length" : 13737
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 240,
+          "start" : 228,
           "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "input/resources/capabilitystatement-us-core-server.json",
-      "size" : 424691,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 70
-        },
-        {
-          "activity" : "load",
-          "start" : 49,
-          "length" : 170
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 50,
-          "length" : 12
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 50,
-          "length" : 7
-        },
-        {
-          "activity" : "validate",
-          "start" : 53,
-          "length" : 3108
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 57,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 61,
-          "length" : 869
-        },
-        {
-          "activity" : "generate2",
-          "start" : 83,
-          "length" : 141
-        },
-        {
-          "activity" : "makeDependencies",
-          "start" : 84,
-          "length" : 2
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 240,
-          "length" : 29
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 248,
-          "length" : 7
         }
       ]
     }

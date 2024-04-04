@@ -37,6 +37,18 @@
       "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
     },
     {
+      "url" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Icd10CM",
+      "title" : "International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)",
+      "description" : "The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM), describes the classification of morbidity and mortality information for statistical purposes and for the indexing of healthcare records by diseases. The ICD-10-CM codes can be used as the value of the Act.cd attribute.",
+      "oids" : ["2.16.840.1.113883.6.90"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
+    },
+    {
       "url" : "http://loinc.org",
       "version" : "3.1.0",
       "status" : "active",
@@ -46,7 +58,20 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-laboratory-test-codes.html" : "US Core Laboratory Test Codes",
       "ValueSet-uscore-common-sdoh-assessments.html" : "US Core Common SDOH Assessments ValueSet"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
@@ -71,6 +96,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-condition-ver-status.html" : "ConditionVerificationStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "ObservationInterpretation",
+      "title" : "ObservationInterpretation",
+      "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
+      "oids" : ["2.16.840.1.113883.5.83"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
     },
     {
       "url" : "urn:ietf:bcp:47",

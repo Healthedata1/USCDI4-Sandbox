@@ -237,7 +237,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="current-binding-for-coded-elements">Current Binding for Coded Elements</h4>
 
-<p>The FHIR guidance for extensible bindings indicates that <em>all conceptual overlaps</em> including free text, be mapped to the coded values in the bindings. US Core guidance adopts the <a href="https://hl7.org/fhir/R5/terminologies.html#binding">current</a> additional binding from FHIR R5 for more flexibility for legacy and text-only data. However, for newly recorded, non-legacy data, a system <strong>SHALL</strong> adhere to the extensible binding rules.</p>
+<p>The FHIR guidance for extensible bindings indicates that <em>all conceptual overlaps</em> including free text, be mapped to the coded values in the bindings. US Core adopts the <a href="https://hl7.org/fhir/R5/terminologies.html#binding">current</a> additional binding from FHIR R5 for more flexibility for exchanging legacy and text-only data. However, for newly recorded, non-legacy data, a system <strong>SHALL</strong> adhere to the extensible binding rules.</p>
 
 <p>For example, the [US Core Procedure Codes] and  [US Core Condition Codes] ValueSets completely cover the domain. For data not captured by  fine-grained code it is possible to provide a a high-level abstract code*, such as SNOMED CT “Procedure”. Therefore instead of requiring all legacy and text data be mapped to a standard code, the valueset uses a “current” binding</p>
 
@@ -291,7 +291,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 28, 2024 04:27+0000">2024-03-28</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 4, 2024 02:04+0000">2024-04-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,17 +1,17 @@
 [
   {
-    "id" : "us-core-server",
-    "type" : "CapabilityStatement",
-    "url" : "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server",
-    "version" : "0.0.0",
-    "name" : "UsCoreServerCapabilityStatement"
-  },
-  {
     "id" : "us-core-condition-encounter-diagnosis",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis",
     "version" : "0.0.0",
     "name" : "USCoreConditionEncounterDiagnosisProfile"
+  },
+  {
+    "id" : "us-core-observation-lab",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab",
+    "version" : "0.0.0",
+    "name" : "USCoreLaboratoryResultObservationProfile"
   },
   {
     "id" : "us-core-patient",

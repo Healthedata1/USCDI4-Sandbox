@@ -18,7 +18,7 @@
   "name" : "USCDI4_1Sandbox",
   "title" : "HealtheData1 USCDI4 Sandbox",
   "status" : "active",
-  "date" : "2024-03-28T04:27:37+00:00",
+  "date" : "2024-04-04T02:04:39+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -795,11 +795,59 @@
         "valueString" : "Condition"
       }],
       "reference" : {
+        "reference" : "Condition/encounter-diagnosis-example3"
+      },
+      "name" : "Encounter Diagnosis Example 1",
+      "description" : "This example of a US Core Condition Encounter Diagnosis Profile illustrates its use to capture information about a patient's encounter diagnosis.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
         "reference" : "Condition/encounter-diagnosis-example1"
       },
       "name" : "Encounter Diagnosis Example 1",
       "description" : "This example of a US Core Condition Encounter Diagnosis Profile illustrates its use to capture information about a patient's encounter diagnosis.",
       "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/encounter-diagnosis-example2"
+      },
+      "name" : "Encounter Diagnosis Example 1",
+      "description" : "This example of a US Core Condition Encounter Diagnosis Profile illustrates its use to capture information about a patient's encounter diagnosis.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/encounter-diagnosis-example4"
+      },
+      "name" : "Encounter Diagnosis Example 1",
+      "description" : "This example of a US Core Condition Encounter Diagnosis Profile illustrates its use to capture information about a patient's encounter diagnosis.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/serum-bun"
+      },
+      "name" : "Serum BUN Example",
+      "description" : "This is a BUN example for the *US Core Observation Lab Profile*.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
     },
     {
       "extension" : [{
@@ -831,22 +879,22 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/us-core-patient"
+        "reference" : "StructureDefinition/us-core-observation-lab"
       },
-      "name" : "US Core Patient Profile",
-      "description" : "The US Core Patient Profile meets the U.S. Core Data for Interoperability (USCDI) v3 'Patient Demographics' requirements. This profile sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource when using this profile to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases.",
+      "name" : "US Core Laboratory Result Observation Profile",
+      "description" : "The US Core Laboratory Result Observation Profile is based upon the US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability (USCDI) Laboratory requirements. Laboratory results are grouped and summarized using the DiagnosticReport resource, which references Observation resources. Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) that references other observations, or rarely a laboratory test with component result values. The US Core Laboratory Result Observation Profile sets minimum expectations for the Observation resource to record, search, and fetch laboratory test results associated with a patient to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets SHALL be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases.",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CapabilityStatement"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "CapabilityStatement/us-core-server"
+        "reference" : "StructureDefinition/us-core-patient"
       },
-      "name" : "US Core Server CapabilityStatement",
-      "description" : "This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ONC 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ONC [U.S. Core Data for Interoperability (USCDI) Version 4 July 2023](https://www.healthit.gov/sites/isa/files/2023-07/Final-USCDI-Version-4-July-2023-Final.pdf).  US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
+      "name" : "US Core Patient Profile",
+      "description" : "The US Core Patient Profile meets the U.S. Core Data for Interoperability (USCDI) v3 'Patient Demographics' requirements. This profile sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource when using this profile to promote interoperability and adoption through common implementation.  It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile.  It provides the floor for standards development for specific use cases.",
       "exampleBoolean" : false
     }],
     "page" : {

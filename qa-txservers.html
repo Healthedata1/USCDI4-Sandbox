@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for USCDI4_1Sandbox</h1>
- <p>Generated Thu Mar 28 04:30:56 UTC 2024, FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = <a href="http://www.fhir.org/guides/uscdi4-sandbox">http://www.fhir.org/guides/uscdi4-sandbox</a> (<a href="http://www.fhir.org/guides/uscdi4-sandbox/history.html">history</a>))</p>
+ <p>Generated Thu Apr 04 02:07:50 UTC 2024, FHIR version 4.0.1 for uscdi4-sandbox#0.0.0 (canonical = <a href="http://www.fhir.org/guides/uscdi4-sandbox">http://www.fhir.org/guides/uscdi4-sandbox</a> (<a href="http://www.fhir.org/guides/uscdi4-sandbox/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -22,7 +22,7 @@
 </ul>
 <h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
 <ul>
-  <li>(No Errors/Reports - all good)</li>
+  <li>Request for system [http://example.org/fhir/codes] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
 </ul>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
 <p>Use Count: 23. Code Systems used: </p>
@@ -42,6 +42,12 @@
     </th>
   </tr>
   <tr>
+    <td>http://example.org/fhir/codes</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>http://hl7.org/fhir/sid/icd-10-cm</td>
     <td>0</td>
     <td>1</td>
@@ -58,7 +64,7 @@
   <tr>
     <td>http://loinc.org</td>
     <td>2</td>
-    <td>2</td>
+    <td>5</td>
     <td>
       <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
     </td>
@@ -78,15 +84,17 @@
     <td></td>
   </tr>
   <tr>
+    <td>http://unitsofmeasure.org</td>
+    <td>0</td>
+    <td>2</td>
+    <td>
+      <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
+    </td>
+  </tr>
+  <tr>
     <td>http://unstats.un.org/unsd/methods/m49/m49.htm</td>
     <td>0</td>
     <td>1</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>urn:ietf:bcp:13</td>
-    <td>0</td>
-    <td>6</td>
     <td></td>
   </tr>
   <tr>

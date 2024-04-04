@@ -11,6 +11,12 @@
         "title": "US Core Condition Encounter Diagnosis Profile"
       }
     ],
+    "Observation": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab",
+        "title": "US Core Laboratory Result Observation Profile"
+      }
+    ],
     "Patient": [
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
@@ -19,28 +25,11 @@
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
-      "CapabilityStatement.format",
-      "CapabilityStatement.implementationGuide",
-      "CapabilityStatement.instantiates",
-      "CapabilityStatement.patchFormat",
-      "CapabilityStatement.rest.interaction",
-      "CapabilityStatement.rest.resource",
-      "CapabilityStatement.rest.resource.interaction",
-      "CapabilityStatement.rest.resource.operation",
-      "CapabilityStatement.rest.resource.referencePolicy",
-      "CapabilityStatement.rest.resource.searchInclude",
-      "CapabilityStatement.rest.resource.searchParam",
-      "CapabilityStatement.rest.resource.searchRevInclude",
-      "CapabilityStatement.rest.resource.supportedProfile"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination": [
-      "CapabilityStatement.rest.resource"
-    ],
     "http://hl7.org/fhir/StructureDefinition/condition-assertedDate": [
       "Condition"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.differential.element.constraint",
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
@@ -60,6 +49,9 @@
       "StructureDefinition.differential.element.type.targetProfile",
       "StructureDefinition.snapshot.element.type",
       "StructureDefinition.snapshot.element.type.targetProfile"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
