@@ -238,8 +238,8 @@
       "uses" : {
       },
       "StructureDefinition-us-core-condition-encounter-diagnosis.html" : "US Core Condition Encounter Diagnosis Profile",
-      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile",
-      "StructureDefinition-us-core-observation-lab.html" : "US Core Laboratory Result Observation Profile"
+      "StructureDefinition-us-core-observation-lab.html" : "US Core Laboratory Result Observation Profile",
+      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",

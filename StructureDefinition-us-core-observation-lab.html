@@ -313,7 +313,7 @@ Note that the “Differential Table” displays elements unique to this profile 
 <p><strong>Each Observation Must Support:</strong></p>
 
 <ol>
-  <li><span class="bg-success">a timestamp when the resource last changed</span>  <!-- new-content --></li>
+  <li><span class="bg-success">a timestamp when the resource last changed*</span>  <!-- new-content --></li>
   <li>a result value*
     <ul>
       <li>if the result value is a numeric quantity, a standard [UCUM] unit</li>
@@ -374,10 +374,19 @@ example usage:
 </ul>
 
 <ul>
-  <li><span class="bg-success">*This profile inherits the invariant “us-core-3” from the US Core Observation Clinical Result Profile that requires UCUM to be used as a unit type for `Observation.valeQuantity.code’.</span></li>
+  <li><span class="bg-success">*This profile inherits the invariant “us-core-3” from the US Core Observation Clinical Result Profile that requires UCUM to be used as a unit type for `Observation.valeQuantity.code’.</span>  <!-- new-content --></li>
+  <li><span class="bg-success">/* See the US Core General Guidance page for <a href="guidance.html#searching-using-lastupdated">searching using lastUpdated</a>. Updates to <code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code> SHOULD reflect:</span>  <!-- new-content -->
+    <ul>
+      <li><span class="bg-success">New laboratory observations</span>  <!-- new-content --></li>
+      <li><span class="bg-success">Changes in the status of laboratory observations including events that trigger the same status (e.g., amended → amended).</span>  <!-- new-content --></li>
+    </ul>
+  </li>
 </ul>
 
-<p>&lt;/span&gt;  <!-- new-content --></p>
+<div class="stu-note ">
+  <p>Note: After additional testing, We intend to upgrade this <code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code> guidance (<strong>SHOULD</strong>) to requirements (<strong>SHALL</strong>) in the next version of US Core)</p>
+</div>
+  <!-- stu-note -->
 
 
 </div>
@@ -2767,7 +2776,7 @@ up to three LOINCs (1 or 3 required)
 
 <ul>
   <li>See the <a href="scopes.html#scopes-format">Scopes Format</a> section for a description of the SMART scopes syntax.</li>
-  <li><a name="l11220">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l11259">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
   <li>See the [General Requirements] section for additional rules and expectations when a server requires status parameters.</li>
   <li>See the [General Guidance] section for additional guidance on searching for multiple patients.</li>
 </ul>
@@ -2795,7 +2804,7 @@ up to three LOINCs (1 or 3 required)
 
 <ol>
   <li>
-    <p><strong>SHALL</strong> support searching using the combination of the <strong><a name="l11280">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l11285">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> search parameters:</p>
+    <p><strong>SHALL</strong> support searching using the combination of the <strong><a name="l11319">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l11324">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> search parameters:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Observation?patient={Type/}[id]&amp;category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory</code></p>
 
@@ -2807,7 +2816,7 @@ up to three LOINCs (1 or 3 required)
 
     <p><em>Implementation Notes:</em> Fetches a bundle of all Observation resources for the specified patient and a category code = <code class="language-plaintext highlighter-rouge">laboratory</code> ([how to search by reference] and [how to search by token])</p>
   </li>
-  <li><strong>SHALL</strong> support searching using the combination of the <strong><a name="l11317">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l11322">​</a><a href="SearchParameter-us-core-observation-code.html"><code class="language-plaintext highlighter-rouge">code</code></a></strong> search parameters:
+  <li><strong>SHALL</strong> support searching using the combination of the <strong><a name="l11356">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l11361">​</a><a href="SearchParameter-us-core-observation-code.html"><code class="language-plaintext highlighter-rouge">code</code></a></strong> search parameters:
     <ul>
       <li>including optional support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">code</code> (e.g.<code class="language-plaintext highlighter-rouge">code={system|}[code],{system|}[code],...</code>)</li>
     </ul>
@@ -2823,7 +2832,7 @@ up to three LOINCs (1 or 3 required)
 
     <p><em>Implementation Notes:</em> Fetches a bundle of all Observation resources for the specified patient and observation code(s).  SHOULD support search by multiple report codes. The Observation <code class="language-plaintext highlighter-rouge">code</code> parameter searches `Observation.code only. ([how to search by reference] and [how to search by token])</p>
   </li>
-  <li><strong>SHALL</strong> support searching using the combination of the <strong><a name="l11371">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l11376">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> and <strong><a name="l11381">​</a><a href="SearchParameter-us-core-observation-date.html"><code class="language-plaintext highlighter-rouge">date</code></a></strong> search parameters:
+  <li><strong>SHALL</strong> support searching using the combination of the <strong><a name="l11410">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l11415">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> and <strong><a name="l11420">​</a><a href="SearchParameter-us-core-observation-date.html"><code class="language-plaintext highlighter-rouge">date</code></a></strong> search parameters:
     <ul>
       <li>including support for these <code class="language-plaintext highlighter-rouge">date</code> comparators: <code class="language-plaintext highlighter-rouge">gt,lt,ge,le</code></li>
       <li>including optional support for <em>AND</em> search on <code class="language-plaintext highlighter-rouge">date</code> (e.g.<code class="language-plaintext highlighter-rouge">date=[date]&amp;date=[date]]&amp;...</code>)</li>
@@ -2846,7 +2855,7 @@ up to three LOINCs (1 or 3 required)
 <p>The following search parameter combinations <strong>SHOULD</strong> be supported:</p>
 
 <ol>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l11447">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l11452">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> and <strong><a name="l11457">​</a><a href="SearchParameter-us-core-observation-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l11486">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l11491">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> and <strong><a name="l11496">​</a><a href="SearchParameter-us-core-observation-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:
     <ul>
       <li>including support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">status</code> (e.g.<code class="language-plaintext highlighter-rouge">status={system|}[code],{system|}[code],...</code>)</li>
     </ul>
@@ -2861,7 +2870,7 @@ up to three LOINCs (1 or 3 required)
 
     <p><em>Implementation Notes:</em> Fetches a bundle of all Observation resources for the specified patient and category = <code class="language-plaintext highlighter-rouge">laboratory</code> and status ([how to search by reference] and [how to search by token])</p>
   </li>
-  <li class="new-content"><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l11503">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l11508">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> and <strong><a name="l11513">​</a><a href="SearchParameter-us-core-observation-lastupdated.html"><code class="language-plaintext highlighter-rouge">_lastUpdated</code></a></strong> search parameters:
+  <li class="new-content"><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l11542">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l11547">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> and <strong><a name="l11552">​</a><a href="SearchParameter-us-core-observation-lastupdated.html"><code class="language-plaintext highlighter-rouge">_lastUpdated</code></a></strong> search parameters:
     <ul>
       <li>including support for these <code class="language-plaintext highlighter-rouge">_lastUpdated</code> comparators: <code class="language-plaintext highlighter-rouge">gt,lt,ge,le</code></li>
       <li>including optional support for <em>AND</em> search on <code class="language-plaintext highlighter-rouge">_lastUpdated</code> (e.g.<code class="language-plaintext highlighter-rouge">_lastUpdated=[date]&amp;_lastUpdated=[date]]&amp;...</code>)</li>
@@ -2877,7 +2886,7 @@ up to three LOINCs (1 or 3 required)
 
     <p><em>Implementation Notes:</em> Fetches a bundle of all Observation resources for the specified patient and category and _lastUpdated. See the US Core General Guidance page for <a href="guidance.html#searching-using-lastupdated">searching using lastUpdated</a>. ([how to search by reference] and [how to search by token] and [how to search by date])</p>
   </li>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l11567">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l11572">​</a><a href="SearchParameter-us-core-observation-code.html"><code class="language-plaintext highlighter-rouge">code</code></a></strong> and <strong><a name="l11577">​</a><a href="SearchParameter-us-core-observation-date.html"><code class="language-plaintext highlighter-rouge">date</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l11606">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l11611">​</a><a href="SearchParameter-us-core-observation-code.html"><code class="language-plaintext highlighter-rouge">code</code></a></strong> and <strong><a name="l11616">​</a><a href="SearchParameter-us-core-observation-date.html"><code class="language-plaintext highlighter-rouge">date</code></a></strong> search parameters:
     <ul>
       <li>including optional support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">code</code> (e.g.<code class="language-plaintext highlighter-rouge">code={system|}[code],{system|}[code],...</code>)</li>
       <li>including support for these <code class="language-plaintext highlighter-rouge">date</code> comparators: <code class="language-plaintext highlighter-rouge">gt,lt,ge,le</code></li>
@@ -2948,7 +2957,7 @@ up to three LOINCs (1 or 3 required)
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 4, 2024 16:36+0000">2024-04-04</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 4, 2024 16:59+0000">2024-04-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
