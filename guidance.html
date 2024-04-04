@@ -205,8 +205,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#suppressed-data" id="markdown-toc-suppressed-data">Suppressed Data</a></li>
   <li><a href="#snomed-ct-united-states-edition" id="markdown-toc-snomed-ct-united-states-edition">SNOMED CT United States Edition</a></li>
   <li><a href="#using-ucum-codes-in-the-quantity-datatype" id="markdown-toc-using-ucum-codes-in-the-quantity-datatype">Using UCUM codes in the [Quantity] datatype</a></li>
-  <li><a href="#representing-entered-in-error-information" id="markdown-toc-representing-entered-in-error-information">Representing Entered in Error Information</a></li>
   <li><a href="#representing-deleted-information" id="markdown-toc-representing-deleted-information">Representing Deleted Information</a></li>
+  <li><a href="#representing-entered-in-error-information" id="markdown-toc-representing-entered-in-error-information">Representing Entered in Error Information</a></li>
   <li><a href="#narrative" id="markdown-toc-narrative">Narrative</a></li>
   <li><a href="#language-support" id="markdown-toc-language-support">Language Support</a></li>
   <li><a href="#timezone-and-time-offsets-strawman-proposal" id="markdown-toc-timezone-and-time-offsets-strawman-proposal">Timezone and Time Offsets (<em>STRAWMAN PROPOSAL</em>)</a></li>
@@ -267,11 +267,26 @@ The table below lists the US Core Profile and FHIR Resources used for the corres
 <h3 id="using-ucum-codes-in-the-quantity-datatype">Using UCUM codes in the [Quantity] datatype</h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh</p>
 
-<h3 id="representing-entered-in-error-information">Representing Entered in Error Information</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh</p>
-
 <h3 id="representing-deleted-information">Representing Deleted Information</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh</p>
+
+<p>A FHIR Server <strong>SHOULD</strong> not delete records. A FHIR server <strong>SHOULD</strong> update the appropriate resource status to <code class="language-plaintext highlighter-rouge">entered-in-error</code> or <code class="language-plaintext highlighter-rouge">inactive</code> (refer to the next section on <em>Representing Entered in Error Information</em>). If a system supports the deletion of records, they <strong>SHOULD</strong> refer to the [Deletion Safety Checks] in the FHIR specification.</p>
+
+<h3 id="representing-entered-in-error-information">Representing Entered in Error Information</h3>
+
+<p>Clinical information that has been entered in error in the patient’s record needs to be represented by the FHIR Server in a way so that Clients can expose the corrected information to their end users.</p>
+
+<p><strong>Server Recommendations:</strong></p>
+<ul>
+  <li>A FHIR Server <strong>SHOULD</strong> not delete resources.</li>
+  <li>A FHIR server <strong>SHOULD</strong> update the appropriate resource status to <code class="language-plaintext highlighter-rouge">entered-in-error</code> or <code class="language-plaintext highlighter-rouge">inactive</code>.</li>
+  <li>A FHIR Server <strong>SHOULD</strong> allow these resources to be searchable by client applications.</li>
+  <li>If the FHIR server has updated the resource status to <code class="language-plaintext highlighter-rouge">entered-in-error</code>:
+    <ul>
+      <li>For <em>patient facing</em> applications, A FHIR Server <strong>SHOULD</strong> remove the contents of resource leaving only an id and status.   Note this typically will not be conformant with the US Core or FHIR StructureDefinitions.</li>
+      <li>For <em>provider-facing</em> applications,  the content may be supplied with content and additional detail (such as the reason for the status change) that the patient viewing system would typically not have access to.</li>
+    </ul>
+  </li>
+</ul>
 
 <h3 id="narrative">Narrative</h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh</p>
@@ -353,7 +368,7 @@ they <strong>SHOULD</strong> expose a method for clients to know if there are ne
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 4, 2024 15:13+0000">2024-04-04</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 4, 2024 16:36+0000">2024-04-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
