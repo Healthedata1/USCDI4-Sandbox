@@ -46,11 +46,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at 
 ###  Using UCUM codes in the [Quantity] datatype
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
 
-### Representing Entered in Error Information
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
-
 ### Representing Deleted Information
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
+
+A FHIR Server **SHOULD** not delete records. A FHIR server **SHOULD** update the appropriate resource status to `entered-in-error` or `inactive` (refer to the next section on *Representing Entered in Error Information*). If a system supports the deletion of records, they **SHOULD** refer to the [Deletion Safety Checks] in the FHIR specification.
+
+### Representing Entered in Error Information
+
+Clinical information that has been entered in error in the patient's record needs to be represented by the FHIR Server in a way so that Clients can expose the corrected information to their end users.
+
+**Server Recommendations:**
+- A FHIR Server **SHOULD** not delete resources.
+- A FHIR server **SHOULD** update the appropriate resource status to `entered-in-error` or `inactive`.
+- A FHIR Server **SHOULD** allow these resources to be searchable by client applications.
+- If the FHIR server has updated the resource status to `entered-in-error`:
+    -  For *patient facing* applications, A FHIR Server **SHOULD** remove the contents of resource leaving only an id and status.   Note this typically will not be conformant with the US Core or FHIR StructureDefinitions.
+    - For *provider-facing* applications,  the content may be supplied with content and additional detail (such as the reason for the status change) that the patient viewing system would typically not have access to.
+
 
 ### Narrative
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nunc at massa porta rutrum. Duis ac nulla a velit hendrerit vehicula at nec urna. Sed gravida pellentesque molestie. Praesent commodo, sem et tincidunt vulputate, nisl nibh 
