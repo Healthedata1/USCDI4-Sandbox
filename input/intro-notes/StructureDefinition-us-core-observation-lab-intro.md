@@ -17,7 +17,7 @@ The following are example usage scenarios for this profile:
 
 **Each Observation Must Support:**
 
-1. <span class="bg-success" markdown="1">a timestamp when the resource last changed</span><!-- new-content -->
+1. <span class="bg-success" markdown="1">a timestamp when the resource last changed*</span><!-- new-content -->
 2. a result value*
    - if the result value is a numeric quantity, a standard [UCUM] unit
    - if the result value is a coded quantity, a standard [SNOMED CT]
@@ -35,8 +35,15 @@ The following are example usage scenarios for this profile:
 - For USCDI, systems are required to use SNOMED CT for coded results if the SCT code exists. 
 - The specimen type can be communicated in the mandatory `Observation.code` (e.g., Blood Glucose), or the Must Support `Observation.specimen` element, or through both elements.
 {% include observation_guidance_1.md category="laboratory" example1=" such as 'chemistry'" example2=" (for example, a 24-Hour Urine Collection test)" %}
-- <span class="bg-success" markdown="1">\*This profile inherits the invariant "us-core-3" from the US Core Observation Clinical Result Profile that requires UCUM to be used as a unit type for `Observation.valeQuantity.code'.
+- <span class="bg-success" markdown="1">\*This profile inherits the invariant "us-core-3" from the US Core Observation Clinical Result Profile that requires UCUM to be used as a unit type for `Observation.valeQuantity.code'.</span><!-- new-content -->
+- <span class="bg-success" markdown="1">/* See the US Core General Guidance page for [searching using lastUpdated]. Updates to `Meta.lastUpdated` SHOULD reflect:</span><!-- new-content -->
+  - <span class="bg-success" markdown="1">New laboratory observations</span><!-- new-content -->
+  - <span class="bg-success" markdown="1">Changes in the status of laboratory observations including events that trigger the same status (e.g., amended → amended).</span><!-- new-content -->
+  
+<div class="stu-note " markdown="1">
+Note: After additional testing, We intend to upgrade this `Meta.lastUpdated` guidance (**SHOULD**) to requirements (**SHALL**) in the next version of US Core)
+</div><!-- stu-note -->
 
-</span><!-- new-content -->
+
 
 {% include link-list.md %}
