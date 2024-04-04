@@ -298,11 +298,11 @@ The table below lists the US Core Profile and FHIR Resources used for the corres
 
 <div class="bg-success">
 
-  <p>Servers that can accurately populate <a href="#"><code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code></a> <strong>SHOULD</strong> support the <a href="#"><code class="language-plaintext highlighter-rouge">_lastUpdated</code></a> search parameter as defined in the core FHIR specifications. If <code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code> is populated:</p>
+  <p>Servers that can accurately populate <a href="#"><code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code></a> <strong>SHOULD</strong> support the <a href="#"><code class="language-plaintext highlighter-rouge">_lastUpdated</code></a> search parameter as defined in the core FHIR specifications. If <code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code> is populated:
+<!-- - Any change in the resource implies a change in `Meta.lastUpdated`; conversely, an unchanged `Meta.lastUpdated` implies no change in the resource. --></p>
   <ul>
-    <li>Any change in the resource implies a change in <code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code>; conversely, an unchanged <code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code> implies no change in the resource.</li>
-    <li>Note to clients that the most recent time does not necessarily reflect changes they can access. A record may change, but the client’s view of the resource may not (for example, if the client is not authorized to see the changed data).</li>
-    <li>Servers cannot populate <code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code> if they cannot update it per the rules in the FHIR core specification.</li>
+    <li>Note to clients that the most recent time does not necessarily reflect changes they can access. A record may change, but the client’s view of the resource may not (for example, if the client is not authorized to see the changed data).
+<!-- - Servers cannot populate `Meta.lastUpdated` if they cannot update it per the rules in the FHIR core specification. --></li>
     <li>Supporting <code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code> in a resource does not imply support for searches using the <code class="language-plaintext highlighter-rouge">_lastUpdated</code> search parameter.</li>
     <li>Support for searches using the <code class="language-plaintext highlighter-rouge">_lastUpdated</code> search parameter does not require servers to support <code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code>; servers can use an alternative method to reliably track changes to an instance.</li>
     <li>Note to servers that updating the timestamp too frequently is better than missing updates.</li>
@@ -312,7 +312,6 @@ The table below lists the US Core Profile and FHIR Resources used for the corres
     <p>Many servers are unable to populate the <code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code> element accurately. However,
 they <strong>SHOULD</strong> expose a method for clients to know if there are new or modified resources since their last polling time and advertise that mechanism in their CapabilityStatement.  Work is in progress to:</p>
     <ul>
-      <li>Define an alternative FHIR search parameter that provides similar functionality. (see FHIR-45012 - Extension for tracking changes in facade contexts).</li>
       <li>Enable <a href="#">FHIR Topic-Based Subscription</a> for notifications on relevant events as an alternative to search polling.</li>
     </ul>
   </div>
@@ -354,7 +353,7 @@ they <strong>SHOULD</strong> expose a method for clients to know if there are ne
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 4, 2024 03:43+0000">2024-04-04</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi4-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 4, 2024 15:13+0000">2024-04-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
